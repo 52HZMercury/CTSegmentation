@@ -187,10 +187,10 @@ class Trainer:
             torch.optim.lr_scheduler: 学习率调度器对象
         """
         return torch.optim.lr_scheduler.ReduceLROnPlateau(
-            self.optimizer, 
-            'max', 
-            factor=self.config['scheduler']['factor'], 
-            verbose=True, 
-            min_lr=self.config['scheduler']['min_lr'],
-            patience=self.config['scheduler']['patience']
+            self.optimizer,
+            'max',
+            factor=float(self.config['scheduler']['factor']),
+            verbose=True,
+            min_lr=float(self.config['scheduler']['min_lr']),
+            patience=int(self.config['scheduler']['patience'])
         )

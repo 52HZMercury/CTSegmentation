@@ -3,7 +3,10 @@
 # Data paths
 data:
   out_dir: "/workdir2/cn24/program/CT_SU/results"
-  split_json: "metadata/Abdominal_Infrarenal.json"
+#  split_json: "metadata/Abdominal_Infrarenal.json"
+#  split_json: "metadata/Abdominal_Suprarenal.json"
+  split_json: "metadata/Ascending_Arch.json"
+#  split_json: "metadata/Descending_Thoracic.json"
   datasets_key: "training"
   validation_key: "validation"
 

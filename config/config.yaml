@@ -1,0 +1,73 @@
+# Training parameters configuration
+
+# Data paths
+data:
+  out_dir: "/workdir2/cn24/program/CT_SU/results"
+  split_json: "metadata/Abdominal_Infrarenal.json"
+  datasets_key: "training"
+  validation_key: "validation"
+
+# Model parameters
+model:
+  architecture: "BasicUNet"
+  spatial_dims: 3
+  in_channels: 1
+  out_channels: 2
+  dropout: 0.0
+
+# Device parameters
+device:
+  cuda_device: "cuda:0"  # 可以设置为 "cuda:0", "cuda:1" 等来选择特定GPU，或 "cpu" 使用CPU
+
+# Training hyperparameters
+training:
+  max_epochs: 100
+#  max_iterations: 160
+#  eval_num: 16
+  batch_size: 4
+  learning_rate: 0.0003
+  weight_decay: 0.00001
+  cache_num: 170
+  cache_rate: 1.0
+  num_workers: 4
+  pin_memory: False
+  num_class: 2
+
+# Validation parameters
+validation:
+  batch_size: 4
+  cache_num: 40
+  cache_rate: 1.0
+  num_workers: 4
+  pin_memory: False
+
+# Transform parameters
+transforms:
+  spacing:
+    pixdim: [1.62, 1.62, 3.2]
+    mode: "bilinear"
+  scale_intensity:
+    a_min: -79
+    a_max: 304
+    b_min: 0.0
+    b_max: 1.0
+    clip: True
+  crop_foreground:
+    margin: 20
+  resize:
+    spatial_size: [160, 96, 64]
+    mode: "constant"
+  rand_crop:
+    spatial_size: [64, 64, 64]
+    pos: 1
+    neg: 0
+    num_samples: 4
+  rand_shift_intensity:
+    offsets: 0.40
+    prob: 0.50
+
+# Scheduler parameters
+scheduler:
+  factor: 0.35
+  min_lr: 1e-6
+  patience: 5

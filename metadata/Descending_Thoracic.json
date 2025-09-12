@@ -1,0 +1,396 @@
+{
+  "training": [
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N021/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N021/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N021/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T034/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T034/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T034/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T021/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T021/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T021/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N019/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N019/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N019/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T019/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T019/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T019/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N008/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N008/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N008/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T022/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T022/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T022/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T015/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T015/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T015/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T035/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T035/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T035/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T062/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T046/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T046/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T046/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N002/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N002/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N002/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N010/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N010/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N010/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N009/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N009/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N009/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N006/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N006/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N006/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T001/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T001/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T001/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T064/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T064/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T064/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T002/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T002/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T002/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T056/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T056/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T056/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N003/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N003/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N003/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N007/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N007/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N007/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T008/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T008/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T008/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T052/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T053/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T053/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T053/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T018/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T018/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T018/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N012/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N012/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N012/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T071/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T071/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T071/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N017/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N017/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N017/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T063/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T063/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T063/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T023/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T023/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T023/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T061/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T025/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T025/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T025/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T042/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T042/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T042/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T049/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T049/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T049/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T065/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T065/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T065/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T067/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T028/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T028/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T028/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T009/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T009/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T009/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T068/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T068/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T068/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T031/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T031/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T031/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T057/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T057/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T057/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T014/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T014/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T014/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T045/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T045/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T045/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T059/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T059/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T059/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T016/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T016/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T016/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T007/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T007/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T007/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N004/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N004/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N004/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T054/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T006/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T006/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T006/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T050/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T050/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T050/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N016/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N016/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N016/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T060/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T060/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T060/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T012/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T012/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T012/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T033/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T033/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T033/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T010/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T010/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T010/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T058/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T058/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T058/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T048/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T048/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T048/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N013/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N013/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N013/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N011/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N011/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N011/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T043/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T043/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T043/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N001/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N001/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N001/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T047/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T047/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T047/ALL.nii.gz"
+    }
+  ],
+  "validation": [
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T011/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T011/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T011/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N005/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N005/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N005/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N018/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N018/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N018/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T051/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T051/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T051/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T039/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T039/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T039/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T026/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T026/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T026/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T030/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T030/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T030/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T044/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T044/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T044/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T037/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T037/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T037/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N015/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N015/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N015/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T032/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T070/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T072/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T041/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T041/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T041/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/N014/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N014/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/N014/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T005/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T005/Descending_Thoracic.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T005/ALL.nii.gz"
+    }
+  ]
+}

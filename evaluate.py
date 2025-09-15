@@ -90,7 +90,7 @@ model = BasicUnet(
     out_channels=3,
     dropout=0.0
 ).to(device)
-directory = '/root/autodl-tmp/code/2.basic_unet_3/results'
+directory = '/root/autodl-tmp/code/2.basic_unet_3/logs'
 root_dir = tempfile.mkdtemp() if directory is None else directory
 model.load_state_dict(torch.load(os.path.join(root_dir, "best_metric_model.pth")))
 model.eval()

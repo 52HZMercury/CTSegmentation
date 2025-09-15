@@ -18,6 +18,10 @@ def validation(Trainer, epoch_iterator_val):
     with torch.no_grad():
         for batch in epoch_iterator_val:
             val_inputs, val_labels = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device))
+            # 将image和all_lab在通道维度上拼接
+            all_lab = batch["all_lab"].to(Trainer.device)
+            val_inputs = torch.cat((val_inputs, all_lab), dim=1)
+
             val_outputs = sliding_window_inference(val_inputs, (64, 64, 64), 4, Trainer.model)
             val_labels_list = decollate_batch(val_labels)
             val_labels_convert = [Trainer.post_label(val_labels_tensor) for val_labels_tensor in val_labels_list]

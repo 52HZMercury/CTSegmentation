@@ -25,7 +25,8 @@ from monai.transforms import (
     ResizeWithPadOrCropd,
     AdjustContrastd
 )
-
+from torch.utils.tensorboard import SummaryWriter
+import os
 
 class Trainer:
     """
@@ -61,6 +62,11 @@ class Trainer:
         
         # 初始化学习率调度器
         self.scheduler = self._init_scheduler()
+
+        # 设置TensorBoard日志写入器
+        log_dir = os.path.join(self.config['data']['out_dir'], self.config['data']['exp_name'])
+        os.makedirs(log_dir, exist_ok=True)
+        self.writer = SummaryWriter(log_dir=log_dir)
         
         # 设置其他训练参数
         # self.max_iterations = self.config['training']['max_iterations']

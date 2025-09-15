@@ -121,7 +121,7 @@ def plot_data_and_label(val_inputs, val_labels, val_outputs):
     plt.show()
 
 case_num = 0
-directory = '/root/autodl-tmp/code/2.basic_unet_3/results'
+directory = '/root/autodl-tmp/code/2.basic_unet_3/logs'
 root_dir = tempfile.mkdtemp() if directory is None else directory
 model.load_state_dict(torch.load(os.path.join(root_dir, "best_metric_model.pth")))
 model.eval()

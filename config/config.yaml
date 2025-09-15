@@ -2,10 +2,11 @@
 
 # Data paths
 data:
-  out_dir: "/workdir2/cn24/program/CT_SU/results"
-#  split_json: "metadata/Abdominal_Infrarenal.json"
+  out_dir: "/workdir2/cn24/program/CT_SU/logs"
+  exp_name: "exp_2"
+  split_json: "metadata/Abdominal_Infrarenal.json"
 #  split_json: "metadata/Abdominal_Suprarenal.json"
-  split_json: "metadata/Ascending_Arch.json"
+#  split_json: "metadata/Ascending_Arch.json"
 #  split_json: "metadata/Descending_Thoracic.json"
   datasets_key: "training"
   validation_key: "validation"
@@ -14,7 +15,7 @@ data:
 model:
   architecture: "BasicUNet"
   spatial_dims: 3
-  in_channels: 1
+  in_channels: 2 # 拼接了all_lab输入, 所以输入通道数是2
   out_channels: 2
   dropout: 0.0
 
@@ -28,20 +29,20 @@ training:
 #  max_iterations: 160
 #  eval_num: 16
   batch_size: 4
+  num_class: 2
   learning_rate: 0.0003
   weight_decay: 0.00001
   cache_num: 170
   cache_rate: 1.0
-  num_workers: 4
+  num_workers: 2
   pin_memory: False
-  num_class: 2
 
 # Validation parameters
 validation:
   batch_size: 4
   cache_num: 40
   cache_rate: 1.0
-  num_workers: 4
+  num_workers: 0
   pin_memory: False
 
 # Transform parameters

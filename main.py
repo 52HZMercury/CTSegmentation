@@ -39,9 +39,11 @@ def main():
         current_epoch += 1
         current_epoch, dice_val_best, global_step_best = train(trainer, current_epoch, dice_val_best, global_step_best)
 
+    print("")
     print(f"=============训练完成==================")
+    print(f"exp_name : {config['data']['exp_name']}")
     print(f"test_dice: {dice_val_best}")
-    print(f"=====================================")
+    print(f"=======================================")
 
 
 

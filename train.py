@@ -17,7 +17,7 @@ def train(Trainer, current_epoch, dice_val_best, global_step_best):
     num_steps = len(Trainer.train_loader)
 
     # 返回一个迭代器，并会不断打印迭代进度条，desc为进度条前缀，允许调整窗口大小
-    epoch_iterator = tqdm(Trainer.train_loader, desc=f"Epoch {current_epoch} Training", dynamic_ncols=True)
+    epoch_iterator = tqdm(Trainer.train_loader, desc=f"{config['data']['exp_name']} Epoch {current_epoch} Training", dynamic_ncols=True)
     for step, batch in enumerate(epoch_iterator):
         step += 1
         # 读取图像和标签并放入GPU
@@ -40,7 +40,7 @@ def train(Trainer, current_epoch, dice_val_best, global_step_best):
         # 更新参数之后清除梯度
         Trainer.optimizer.zero_grad()
         # 设置进度条前缀，为当前训练次数，训练总数，本次训练损失
-        epoch_iterator.set_description(f"Epoch {current_epoch} Training (loss=%2.5f)" % loss)
+        epoch_iterator.set_description(f"{config['data']['exp_name']} Epoch {current_epoch} Training (loss=%2.5f)" % loss)
 
         # 记录每个step的训练损失到TensorBoard
         Trainer.writer.add_scalar('Train/Loss', loss.item(), Trainer.global_step)
@@ -69,7 +69,7 @@ def train(Trainer, current_epoch, dice_val_best, global_step_best):
                     os.makedirs(checkpoint_dir)
 
                 torch.save(Trainer.model.state_dict(),
-                           os.path.join(checkpoint_dir, f"best_metric_model.pth"))
+                           os.path.join(checkpoint_dir, f"best_metric_model_{dice_val}.pth"))
                 print(f'Saved! Current best average dice:{dice_val_best}')
                 # 记录最佳dice值到TensorBoard
                 Trainer.writer.add_scalar('Validation/Best_Dice', dice_val_best, current_epoch)

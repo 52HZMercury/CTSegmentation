@@ -14,20 +14,17 @@ from __future__ import annotations
 import math
 import torch.nn as nn
 import torch, einops
-from functools import partial
+# from functools import partial
 
 from monai.networks.blocks.dynunet_block import UnetOutBlock
 from monai.networks.blocks.unetr_block import UnetrBasicBlock, UnetrUpBlock
 from mamba_ssm import Mamba
 import torch.nn.functional as F
 
-import numpy as np
-from timm.models.layers import trunc_normal_
+# import numpy as np
+# from timm.models.layers import trunc_normal_
 import math
 
-
-# from torchsummary import summary
-from utils.image_visualizer import ImageVisualizer
 
 class LayerNorm(nn.Module):
     r""" LayerNorm that supports two data formats: channels_last (default) or channels_first.
@@ -369,11 +366,11 @@ class MambaLayer(nn.Module):
 
         # 后三维展平为一维进行扫描
         # 横向
-        x_flat = x.reshape(B, C, n_tokens).transpose(-1, -2)
-        x_norm = self.norm(x_flat)
-        x_mamba = self.mamba(x_norm)
-        # 恢复为原来的形状
-        out = x_mamba.transpose(-1, -2).reshape(B, C, *img_dims)
+        # x_flat = x.reshape(B, C, n_tokens).transpose(-1, -2)
+        # x_norm = self.norm(x_flat)
+        # x_mamba = self.mamba(x_norm)
+        # # 恢复为原来的形状
+        # out = x_mamba.transpose(-1, -2).reshape(B, C, *img_dims)
 
         # 竖向
         # x_flat_vertical = x.permute(0, 1, 4, 3, 2).reshape(B, C, n_tokens).transpose(-1, -2)
@@ -392,13 +389,13 @@ class MambaLayer(nn.Module):
         # out = self.DiagonalReshape(x_mamba.transpose(-1, -2), diagonalMap)
 
         # MRscan
-        # frameSize = x.shape[-2]
-        # mooreMap = self.mooreMaps[frameSize]
-        # x_MRflat = self.mooreFlat(x, mooreMap).transpose(-1, -2)
-        # x_norm = self.norm(x_MRflat)
-        # x_mamba = self.mamba(x_norm)
-        # # 恢复为原来的形状
-        # out = self.mooreReshape(x_mamba.transpose(-1, -2), mooreMap)
+        frameSize = x.shape[-2]
+        mooreMap = self.mooreMaps[frameSize]
+        x_MRflat = self.mooreFlat(x, mooreMap).transpose(-1, -2)
+        x_norm = self.norm(x_MRflat)
+        x_mamba = self.mamba(x_norm)
+        # 恢复为原来的形状
+        out = self.mooreReshape(x_mamba.transpose(-1, -2), mooreMap)
 
         out = out + x_skip
 
@@ -529,338 +526,6 @@ class MambaEncoder(nn.Module):
         return x
 
 
-
-# class SqueezeAndExcitation3D(nn.Module):
-#     def __init__(self, channel, reduction=16, activation=nn.ReLU(inplace=True)):
-#         super(SqueezeAndExcitation3D, self).__init__()
-#         self.fc = nn.Sequential(
-#             nn.Conv3d(channel, channel // reduction, kernel_size=1),
-#             activation,
-#             nn.Conv3d(channel // reduction, channel, kernel_size=1),
-#             nn.Sigmoid()
-#         )
-#
-#     def forward(self, x):
-#         weighting = F.adaptive_avg_pool3d(x, 1)
-#         weighting = self.fc(weighting)
-#         y = x * weighting
-#         return y
-
-
-# 论文：CM-UNet: Hybrid CNN-Mamba UNet for Remote Sensing Image Semantic Segmentation
-# 论文地址：https://arxiv.org/pdf/2405.10530
-# class ChannelAttentionModule(nn.Module):
-#     def __init__(self, in_channels, reduction=4):
-#         super(ChannelAttentionModule, self).__init__()
-#         self.avg_pool = nn.AdaptiveAvgPool3d(1)
-#         self.max_pool = nn.AdaptiveMaxPool3d(1)
-#         self.fc = nn.Sequential(
-#             nn.Conv3d(in_channels, in_channels // reduction, 1, bias=False),
-#             nn.ReLU(inplace=True),
-#             nn.Conv3d(in_channels // reduction, in_channels, 1, bias=False)
-#         )
-#         self.sigmoid = nn.Sigmoid()
-#
-#     def forward(self, x):
-#         avg_out = self.fc(self.avg_pool(x))
-#         max_out = self.fc(self.max_pool(x))
-#         out = avg_out + max_out
-#         return self.sigmoid(out)
-
-# class SpatialAttentionModule(nn.Module):
-#     def __init__(self, kernel_size=7):
-#         super(SpatialAttentionModule, self).__init__()
-#         self.conv1 = nn.Conv3d(2, 1, kernel_size, padding=kernel_size//2, bias=False)
-#         self.sigmoid = nn.Sigmoid()
-#
-#     def forward(self, x):
-#         avg_out = torch.mean(x, dim=1, keepdim=True)
-#         max_out, _ = torch.max(x, dim=1, keepdim=True)
-#         x = torch.cat([avg_out, max_out], dim=1)
-#         x = self.conv1(x)
-#         return self.sigmoid(x)
-
-# class FusionConv(nn.Module):
-#     def __init__(self, in_channels, out_channels, factor=4.0):
-#         super(FusionConv, self).__init__()
-#         dim = int(out_channels // factor)
-#         self.down = nn.Conv3d(in_channels, dim, kernel_size=1, stride=1)
-#         self.conv_3x3 = nn.Conv3d(dim, dim, kernel_size=3, stride=1, padding=1)
-#         self.conv_5x5 = nn.Conv3d(dim, dim, kernel_size=5, stride=1, padding=2)
-#         self.conv_7x7 = nn.Conv3d(dim, dim, kernel_size=7, stride=1, padding=3)
-#         self.spatial_attention = SpatialAttentionModule()
-#         self.channel_attention = ChannelAttentionModule(dim)
-#         self.up = nn.Conv3d(dim, out_channels, kernel_size=1, stride=1)
-#         self.down_2 = nn.Conv3d(in_channels, dim, kernel_size=1, stride=1)
-#
-#     def forward(self, x1, x2, x4):
-#         # 在通道上拼起来
-#         x_fused = torch.cat([x1, x2, x4], dim=1)
-#         x_fused = self.down(x_fused)
-#         x_fused_c = x_fused * self.channel_attention(x_fused)
-#         x_3x3 = self.conv_3x3(x_fused)
-#         x_5x5 = self.conv_5x5(x_fused)
-#         x_7x7 = self.conv_7x7(x_fused)
-#         x_fused_s = x_3x3 + x_5x5 + x_7x7
-#         x_fused_s = x_fused_s * self.spatial_attention(x_fused_s)
-#
-#         x_out = self.up(x_fused_s + x_fused_c)
-#
-#         return x_out
-
-# class MSAA(nn.Module):
-#     def __init__(self, in_channels, out_channels):
-#         super(MSAA, self).__init__()
-#         self.fusion_conv = FusionConv(in_channels * 3, out_channels)
-#
-#     def forward(self, x1, x2, x4, last=False):
-#         # # x2 是从低到高，x4是从高到低的设计，x2传递语义信息，x4传递边缘问题特征补充
-#         # x_1_2_fusion = self.fusion_1x2(x1, x2)
-#         # x_1_4_fusion = self.fusion_1x4(x1, x4)
-#         # x_fused = x_1_2_fusion + x_1_4_fusion
-#         x_fused = self.fusion_conv(x1, x2, x4)
-#         return x_fused
-
-# Vision Transformer with Deformable Attention
-# class LayerNormProxy(nn.Module):
-#     def __init__(self, dim):
-#         super().__init__()
-#         self.norm = nn.LayerNorm(dim)
-#
-#     def forward(self, x):
-#         x = einops.rearrange(x, 'b c h w -> b h w c')
-#         x = self.norm(x)
-#         return einops.rearrange(x, 'b h w c -> b c h w')
-#
-# class DAttention(nn.Module):
-#     # Vision Transformer with Deformable Attention CVPR2022
-#     # fixed_pe=True need adujust 640x640
-#     def __init__(
-#         self, channel, q_size, n_heads=8, n_groups=4,
-#         attn_drop=0.0, proj_drop=0.0, stride=1,
-#         offset_range_factor=4, use_pe=True, dwc_pe=True,
-#         no_off=False, fixed_pe=False, ksize=3, log_cpb=False, kv_size=None
-#     ):
-#         super().__init__()
-#         n_head_channels = channel // n_heads
-#         self.dwc_pe = dwc_pe
-#         self.n_head_channels = n_head_channels
-#         self.scale = self.n_head_channels ** -0.5
-#         self.n_heads = n_heads
-#         self.q_h, self.q_w = q_size
-#         # self.kv_h, self.kv_w = kv_size
-#         self.kv_h, self.kv_w = self.q_h // stride, self.q_w // stride
-#         self.nc = n_head_channels * n_heads
-#         self.n_groups = n_groups
-#         self.n_group_channels = self.nc // self.n_groups
-#         self.n_group_heads = self.n_heads // self.n_groups
-#         self.use_pe = use_pe
-#         self.fixed_pe = fixed_pe
-#         self.no_off = no_off
-#         self.offset_range_factor = offset_range_factor
-#         self.ksize = ksize
-#         self.log_cpb = log_cpb
-#         self.stride = stride
-#         kk = self.ksize
-#         pad_size = kk // 2 if kk != stride else 0
-#
-#         self.conv_offset = nn.Sequential(
-#             nn.Conv2d(self.n_group_channels, self.n_group_channels, kk, stride, pad_size, groups=self.n_group_channels),
-#             LayerNormProxy(self.n_group_channels),
-#             nn.GELU(),
-#             nn.Conv2d(self.n_group_channels, 2, 1, 1, 0, bias=False)
-#         )
-#         if self.no_off:
-#             for m in self.conv_offset.parameters():
-#                 m.requires_grad_(False)
-#
-#         self.proj_q = nn.Conv2d(
-#             self.nc, self.nc,
-#             kernel_size=1, stride=1, padding=0
-#         )
-#
-#         self.proj_k = nn.Conv2d(
-#             self.nc, self.nc,
-#             kernel_size=1, stride=1, padding=0
-#         )
-#
-#         self.proj_v = nn.Conv2d(
-#             self.nc, self.nc,
-#             kernel_size=1, stride=1, padding=0
-#         )
-#
-#         self.proj_out = nn.Conv2d(
-#             self.nc, self.nc,
-#             kernel_size=1, stride=1, padding=0
-#         )
-#
-#         self.proj_drop = nn.Dropout(proj_drop, inplace=True)
-#         self.attn_drop = nn.Dropout(attn_drop, inplace=True)
-#
-#         if self.use_pe and not self.no_off:
-#             if self.dwc_pe:
-#                 self.rpe_table = nn.Conv2d(
-#                     self.nc, self.nc, kernel_size=3, stride=1, padding=1, groups=self.nc)
-#             elif self.fixed_pe:
-#                 self.rpe_table = nn.Parameter(
-#                     torch.zeros(self.n_heads, self.q_h * self.q_w, self.kv_h * self.kv_w)
-#                 )
-#                 trunc_normal_(self.rpe_table, std=0.01)
-#             elif self.log_cpb:
-#                 # Borrowed from Swin-V2
-#                 self.rpe_table = nn.Sequential(
-#                     nn.Linear(2, 32, bias=True),
-#                     nn.ReLU(inplace=True),
-#                     nn.Linear(32, self.n_group_heads, bias=False)
-#                 )
-#             else:
-#                 self.rpe_table = nn.Parameter(
-#                     torch.zeros(self.n_heads, self.q_h * 2 - 1, self.q_w * 2 - 1)
-#                 )
-#                 trunc_normal_(self.rpe_table, std=0.01)
-#         else:
-#             self.rpe_table = None
-#
-#     @torch.no_grad()
-#     def _get_ref_points(self, H_key, W_key, B, dtype, device):
-#
-#         ref_y, ref_x = torch.meshgrid(
-#             torch.linspace(0.5, H_key - 0.5, H_key, dtype=dtype, device=device),
-#             torch.linspace(0.5, W_key - 0.5, W_key, dtype=dtype, device=device),
-#             indexing='ij'
-#         )
-#         ref = torch.stack((ref_y, ref_x), -1)
-#         ref[..., 1].div_(W_key - 1.0).mul_(2.0).sub_(1.0)
-#         ref[..., 0].div_(H_key - 1.0).mul_(2.0).sub_(1.0)
-#         ref = ref[None, ...].expand(B * self.n_groups, -1, -1, -1) # B * g H W 2
-#
-#         return ref
-#
-#     @torch.no_grad()
-#     def _get_q_grid(self, H, W, B, dtype, device):
-#
-#         ref_y, ref_x = torch.meshgrid(
-#             torch.arange(0, H, dtype=dtype, device=device),
-#             torch.arange(0, W, dtype=dtype, device=device),
-#             indexing='ij'
-#         )
-#         ref = torch.stack((ref_y, ref_x), -1)
-#         ref[..., 1].div_(W - 1.0).mul_(2.0).sub_(1.0)
-#         ref[..., 0].div_(H - 1.0).mul_(2.0).sub_(1.0)
-#         ref = ref[None, ...].expand(B * self.n_groups, -1, -1, -1) # B * g H W 2
-#
-#         return ref
-#
-#     def forward(self, x):
-#
-#         B, C, H, W = x.size()
-#         dtype, device = x.dtype, x.device
-#
-#         q = self.proj_q(x)
-#         q_off = einops.rearrange(q, 'b (g c) h w -> (b g) c h w', g=self.n_groups, c=self.n_group_channels)
-#         offset = self.conv_offset(q_off).contiguous() # B * g 2 Hg Wg
-#         Hk, Wk = offset.size(2), offset.size(3)
-#         n_sample = Hk * Wk
-#
-#         if self.offset_range_factor >= 0 and not self.no_off:
-#             offset_range = torch.tensor([1.0 / (Hk - 1.0), 1.0 / (Wk - 1.0)], device=device).reshape(1, 2, 1, 1)
-#             offset = offset.tanh().mul(offset_range).mul(self.offset_range_factor)
-#
-#         offset = einops.rearrange(offset, 'b p h w -> b h w p')
-#         reference = self._get_ref_points(Hk, Wk, B, dtype, device)
-#
-#         if self.no_off:
-#             offset = offset.fill_(0.0)
-#
-#         if self.offset_range_factor >= 0:
-#             pos = offset + reference
-#         else:
-#             pos = (offset + reference).clamp(-1., +1.)
-#
-#         if self.no_off:
-#             x_sampled = F.avg_pool2d(x, kernel_size=self.stride, stride=self.stride)
-#             assert x_sampled.size(2) == Hk and x_sampled.size(3) == Wk, f"Size is {x_sampled.size()}"
-#         else:
-#             pos = pos.type(x.dtype)
-#             x_sampled = F.grid_sample(
-#                 input=x.reshape(B * self.n_groups, self.n_group_channels, H, W),
-#                 grid=pos[..., (1, 0)], # y, x -> x, y
-#                 mode='bilinear', align_corners=True) # B * g, Cg, Hg, Wg
-#
-#
-#         x_sampled = x_sampled.reshape(B, C, 1, n_sample)
-#
-#         q = q.reshape(B * self.n_heads, self.n_head_channels, H * W)
-#         k = self.proj_k(x_sampled).reshape(B * self.n_heads, self.n_head_channels, n_sample)
-#         v = self.proj_v(x_sampled).reshape(B * self.n_heads, self.n_head_channels, n_sample)
-#
-#         attn = torch.einsum('b c m, b c n -> b m n', q, k) # B * h, HW, Ns
-#         attn = attn.mul(self.scale)
-#
-#         if self.use_pe and (not self.no_off):
-#
-#             if self.dwc_pe:
-#                 residual_lepe = self.rpe_table(q.reshape(B, C, H, W)).reshape(B * self.n_heads, self.n_head_channels, H * W)
-#             elif self.fixed_pe:
-#                 rpe_table = self.rpe_table
-#                 attn_bias = rpe_table[None, ...].expand(B, -1, -1, -1)
-#                 attn = attn + attn_bias.reshape(B * self.n_heads, H * W, n_sample)
-#             elif self.log_cpb:
-#                 q_grid = self._get_q_grid(H, W, B, dtype, device)
-#                 displacement = (q_grid.reshape(B * self.n_groups, H * W, 2).unsqueeze(2) - pos.reshape(B * self.n_groups, n_sample, 2).unsqueeze(1)).mul(4.0) # d_y, d_x [-8, +8]
-#                 displacement = torch.sign(displacement) * torch.log2(torch.abs(displacement) + 1.0) / np.log2(8.0)
-#                 attn_bias = self.rpe_table(displacement) # B * g, H * W, n_sample, h_g
-#                 attn = attn + einops.rearrange(attn_bias, 'b m n h -> (b h) m n', h=self.n_group_heads)
-#             else:
-#                 rpe_table = self.rpe_table
-#                 rpe_bias = rpe_table[None, ...].expand(B, -1, -1, -1)
-#                 q_grid = self._get_q_grid(H, W, B, dtype, device)
-#                 displacement = (q_grid.reshape(B * self.n_groups, H * W, 2).unsqueeze(2) - pos.reshape(B * self.n_groups, n_sample, 2).unsqueeze(1)).mul(0.5)
-#                 attn_bias = F.grid_sample(
-#                     input=einops.rearrange(rpe_bias, 'b (g c) h w -> (b g) c h w', c=self.n_group_heads, g=self.n_groups),
-#                     grid=displacement[..., (1, 0)],
-#                     mode='bilinear', align_corners=True) # B * g, h_g, HW, Ns
-#
-#                 attn_bias = attn_bias.reshape(B * self.n_heads, H * W, n_sample)
-#                 attn = attn + attn_bias
-#
-#         attn = F.softmax(attn, dim=2)
-#         attn = self.attn_drop(attn)
-#
-#         out = torch.einsum('b m n, b c n -> b c m', attn, v)
-#
-#         if self.use_pe and self.dwc_pe:
-#             out = out + residual_lepe
-#         out = out.reshape(B, C, H, W)
-#
-#         y = self.proj_drop(self.proj_out(out))
-#
-#         return y
-#
-#
-# if __name__ == '__main__':
-#     # 设置模型超参数
-#     channel = 64
-#     q_size = (32, 32) # 假设查询大小为 32x32
-#     n_heads = 8  # 8 个注意力头
-#     n_groups = 4  # 分成 4 组
-#     stride = 1  # 卷积步长为 1
-#
-#     # 创建 DAttention 模块实例
-#     model = DAttention(
-#         channel=channel, q_size=q_size, n_heads=n_heads, n_groups=n_groups, stride=stride
-#     )
-#
-#     batch_size = 4  # 假设批次大小为 4
-#     height, width = 64, 64  # 假设输入图像的尺寸为 64x64
-#     input = torch.randn(batch_size, channel, height, width)
-#
-#     output = model(input)
-#
-#     print(input.shape)
-#     print(output.shape)
-
-
 class SegMamba(nn.Module):
     def __init__(
             self,
@@ -885,9 +550,6 @@ class SegMamba(nn.Module):
         self.drop_path_rate = drop_path_rate
         self.feat_size = feat_size
         self.layer_scale_init_value = layer_scale_init_value
-
-        # 加的SqueezeAndExcitation3D
-        # self.channel_att_d2 = SqueezeAndExcitation3D(16)
 
         # 初始化 moore的mooreMap
         mooreMaps = MooreCurve().mooreCurveMaps
@@ -994,17 +656,6 @@ class SegMamba(nn.Module):
             norm_name=norm_name,
             res_block=res_block,
         )
-        # # 加的MSAA层
-        # self.msaa = MSAA(in_channels=16, out_channels=16)
-        # # 定义定义转置卷积层 上采样
-        # self.conv_transpose1 = nn.ConvTranspose3d(in_channels=32, out_channels=16, kernel_size=2, stride=2, padding=0)
-        # self.conv_transpose2 = nn.ConvTranspose3d(in_channels=64, out_channels=32, kernel_size=2, stride=2, padding=0)
-        #
-        # # 定义卷积层，改变通道数
-        # self.conv_layer_16_32 = nn.Conv3d(in_channels=16, out_channels=32, kernel_size=1, stride=1, padding=0)
-        # self.conv_layer_32_64 = nn.Conv3d(in_channels=32, out_channels=64, kernel_size=1, stride=1, padding=0)
-        # # 池化下采样
-        # self.max_pool_layer = nn.MaxPool3d(kernel_size=2, stride=2)
 
         self.out = UnetOutBlock(spatial_dims=spatial_dims, in_channels=16, out_channels=self.out_chans)
         # self.out = UnetOutBlock(spatial_dims=2, in_channels=16, out_channels=self.out_chans)
@@ -1025,31 +676,10 @@ class SegMamba(nn.Module):
 
         x3 = outs[1]
         enc3 = self.encoder3(x3)
-        ex3 = enc3
+        # ex3 = enc3
 
         x4 = outs[2]
         enc4 = self.encoder4(x4)
-
-        # enc2_modify = self.conv_transpose1(enc2)
-        # enc3_modify = self.conv_transpose1(self.conv_transpose2(enc3))
-
-        # x_mean = self.msaa(enc1, enc2_modify, enc3_modify)
-        # [4, 16, 128, 128, 128]
-
-        # x_in [4, 3, 128, 128, 128]
-        # enc1 [4, 16, 128, 128, 128]
-
-        # x2:  [4, 16, 64, 64, 64]
-        # enc2 [4, 32, 64, 64, 64]
-
-        # x3:  [4, 32, 32, 32, 32]
-        # enc3 [4, 64, 32, 32, 32]
-
-        # x4:  [4, 64, 16, 16, 16]
-        # enc4:[4, 128, 16, 16, 16]
-
-        # enc2 = self.max_pool_layer(self.conv_layer_16_32(x_mean))
-        # enc3 = self.max_pool_layer(self.conv_layer_32_64(enc2))
 
         enc_hidden = self.encoder5(outs[3])
         # ex5 = enc_hidden
@@ -1062,25 +692,22 @@ class SegMamba(nn.Module):
 
         dec0 = self.decoder2(dec1, enc1)
 
-        # # 新增一层通道注意力
-        # decT = self.channel_att_d2(dec0)
-
         # origin
         out = self.decoder1(dec0)
 
-        # 进行可视化
-        # (1,c,h,w,f)
-        visualizer = ImageVisualizer()
-
-        #visualizer.show_image(dx1[0, 0, :, :, 0], cmap='jet', save_path='/media/gx/code/data/cn24/program/SimLVSeg/visualization/image/decoder1.png')
-
-        vis_img = ex3
-        image_list = []
-        for c in range(4):
-            c_img = vis_img[0, c, :, :, 0]
-            image_list.append(c_img)
-        # visualizer.show_images(image_list, cmap='jet', save_path='/media/gx/code/data/cn24/program/SimLVSeg/visualization/image/att_decoder2.png')
-        visualizer.show_images(image_list, cmap='gray', save_path='/workdir1/cn24/program/SimLVSeg/visualization/image/encoder3.png')
+        # # 进行可视化
+        # # (1,c,h,w,f)
+        # visualizer = ImageVisualizer()
+        #
+        # #visualizer.show_image(dx1[0, 0, :, :, 0], cmap='jet', save_path='/media/gx/code/data/cn24/program/SimLVSeg/visualization/image/decoder1.png')
+        #
+        # vis_img = ex3
+        # image_list = []
+        # for c in range(4):
+        #     c_img = vis_img[0, c, :, :, 0]
+        #     image_list.append(c_img)
+        # # visualizer.show_images(image_list, cmap='jet', save_path='/media/gx/code/data/cn24/program/SimLVSeg/visualization/image/att_decoder2.png')
+        # visualizer.show_images(image_list, cmap='gray', save_path='/workdir1/cn24/program/SimLVSeg/visualization/image/encoder3.png')
 
         return self.out(out)
 

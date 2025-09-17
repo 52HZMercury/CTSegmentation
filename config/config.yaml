@@ -3,7 +3,7 @@
 # Data paths
 data:
   out_dir: "/workdir2/cn24/program/CT_SU/logs"
-  exp_name: "exp_2"
+  exp_name: "exp_11"
   split_json: "metadata/Abdominal_Infrarenal.json"
 #  split_json: "metadata/Abdominal_Suprarenal.json"
 #  split_json: "metadata/Ascending_Arch.json"
@@ -13,7 +13,8 @@ data:
 
 # Model parameters
 model:
-  architecture: "BasicUNet"
+#  architecture: "BasicUNet"
+  architecture: "SegMamba"
   spatial_dims: 3
   in_channels: 2 # 拼接了all_lab输入, 所以输入通道数是2
   out_channels: 2

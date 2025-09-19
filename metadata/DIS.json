@@ -1,0 +1,286 @@
+{
+  "training": [
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T042/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T042/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T042/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T026/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T026/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T026/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T018/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T018/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T018/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T068/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T068/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T068/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T067/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T007/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T007/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T007/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T014/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T014/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T014/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T002/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T002/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T002/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T052/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T006/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T006/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T006/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T065/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T065/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T065/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T062/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T009/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T009/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T009/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T063/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T063/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T063/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T053/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T053/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T053/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T047/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T047/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T047/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T061/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T021/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T021/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T021/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T045/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T045/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T045/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T028/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T028/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T028/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T043/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T043/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T043/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T039/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T039/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T039/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T054/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T031/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T031/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T031/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T023/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T023/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T023/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T041/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T041/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T041/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T072/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T015/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T015/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T015/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T008/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T008/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T008/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T049/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T049/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T049/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T044/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T044/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T044/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T050/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T050/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T050/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T058/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T058/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T058/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T064/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T064/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T064/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T059/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T059/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T059/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T037/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T037/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T037/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T048/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T048/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T048/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T056/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T056/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T056/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T011/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T011/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T011/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T034/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T034/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T034/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T012/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T012/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T012/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T025/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T025/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T025/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T070/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T046/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T046/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T046/ALL.nii.gz"
+    }
+  ],
+  "validation": [
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T051/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T051/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T051/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T060/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T060/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T060/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T032/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T001/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T001/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T001/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T030/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T030/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T030/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T057/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T057/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T057/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T033/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T033/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T033/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T005/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T005/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T005/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T071/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T071/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T071/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T010/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T010/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T010/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T035/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T035/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T035/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T022/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T022/DIS.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T022/ALL.nii.gz"
+    }
+  ]
+}

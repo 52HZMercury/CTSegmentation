@@ -1,0 +1,156 @@
+{
+  "training": [
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T061/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T062/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T064/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T064/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T064/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T033/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T033/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T033/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T060/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T060/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T060/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T053/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T053/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T053/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T031/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T031/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T031/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T016/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T016/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T016/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T009/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T009/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T009/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T007/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T007/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T007/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T067/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T050/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T050/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T050/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T052/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T032/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T058/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T058/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T058/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T045/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T045/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T045/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T051/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T051/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T051/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T018/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T018/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T018/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T037/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T037/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T037/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T006/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T006/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T006/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T070/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T015/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T015/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T015/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T054/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T068/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T068/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T068/ALL.nii.gz"
+    }
+  ],
+  "validation": [
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T011/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T011/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T011/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T072/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T063/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T063/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T063/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T046/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T046/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T046/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T035/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T035/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T035/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T048/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T048/DIS_Abdominal_Suprarenal.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T048/ALL.nii.gz"
+    }
+  ]
+}

@@ -366,11 +366,11 @@ class MambaLayer(nn.Module):
 
         # 后三维展平为一维进行扫描
         # 横向
-        # x_flat = x.reshape(B, C, n_tokens).transpose(-1, -2)
-        # x_norm = self.norm(x_flat)
-        # x_mamba = self.mamba(x_norm)
-        # # 恢复为原来的形状
-        # out = x_mamba.transpose(-1, -2).reshape(B, C, *img_dims)
+        x_flat = x.reshape(B, C, n_tokens).transpose(-1, -2)
+        x_norm = self.norm(x_flat)
+        x_mamba = self.mamba(x_norm)
+        # 恢复为原来的形状
+        out = x_mamba.transpose(-1, -2).reshape(B, C, *img_dims)
 
         # 竖向
         # x_flat_vertical = x.permute(0, 1, 4, 3, 2).reshape(B, C, n_tokens).transpose(-1, -2)
@@ -389,13 +389,13 @@ class MambaLayer(nn.Module):
         # out = self.DiagonalReshape(x_mamba.transpose(-1, -2), diagonalMap)
 
         # MRscan
-        frameSize = x.shape[-2]
-        mooreMap = self.mooreMaps[frameSize]
-        x_MRflat = self.mooreFlat(x, mooreMap).transpose(-1, -2)
-        x_norm = self.norm(x_MRflat)
-        x_mamba = self.mamba(x_norm)
-        # 恢复为原来的形状
-        out = self.mooreReshape(x_mamba.transpose(-1, -2), mooreMap)
+        # frameSize = x.shape[-2]
+        # mooreMap = self.mooreMaps[frameSize]
+        # x_MRflat = self.mooreFlat(x, mooreMap).transpose(-1, -2)
+        # x_norm = self.norm(x_MRflat)
+        # x_mamba = self.mamba(x_norm)
+        # # 恢复为原来的形状
+        # out = self.mooreReshape(x_mamba.transpose(-1, -2), mooreMap)
 
         out = out + x_skip
 

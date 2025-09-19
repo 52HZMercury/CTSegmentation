@@ -19,7 +19,12 @@ if __name__ == "__main__":
     # part = 'Abdominal_Infrarenal'
     # part = 'Abdominal_Suprarenal'
     # part = 'Ascending_Arch'
-    part = 'Descending_Thoracic'
+    # part = 'Descending_Thoracic'
+    # part = 'DIS'
+    # part = 'DIS_Abdominal_Infrarenal'
+    # part = 'DIS_Abdominal_Suprarenal'
+    # part = 'DIS_Ascending_Arch'
+    part = 'DIS_Descending_Thoracic'
     filename = f'metadata/{part}.json'
     output = []
 
@@ -44,12 +49,15 @@ if __name__ == "__main__":
 
             # 检查标签文件夹是否存在
             if os.path.exists(lab_dir_path) and os.path.isdir(lab_dir_path):
-                # 添加到输出列表
-                output.append({
-                    "image": f"{fpath}/Takayasu_img/{img_dir}/arterial_phase.nii.gz",
-                    "label": f"{fpath}/Takayasu_lab/{img_dir}/{part}.nii.gz",
-                    "all_lab": f"{fpath}/Takayasu_lab/{img_dir}/ALL.nii.gz"
-                })
+                # 检查part.nii.gz文件是否存在
+                part_label_path = os.path.join(lab_dir_path, f"{part}.nii.gz")
+                if os.path.exists(part_label_path):
+                    # 添加到输出列表
+                    output.append({
+                        "image": f"{fpath}/Takayasu_img/{img_dir}/arterial_phase.nii.gz",
+                        "label": f"{fpath}/Takayasu_lab/{img_dir}/{part}.nii.gz",
+                        "all_lab": f"{fpath}/Takayasu_lab/{img_dir}/ALL.nii.gz"
+                    })
 
     random.shuffle(output)
 

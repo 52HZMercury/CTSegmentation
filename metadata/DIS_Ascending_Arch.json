@@ -1,0 +1,186 @@
+{
+  "training": [
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T041/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T041/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T041/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T008/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T008/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T008/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T021/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T021/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T021/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T015/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T015/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T015/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T039/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T039/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T039/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T070/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T026/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T026/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T026/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T010/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T010/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T010/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T034/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T034/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T034/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T063/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T063/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T063/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T050/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T050/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T050/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T062/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T019/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T019/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T019/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T059/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T059/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T059/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T061/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T060/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T060/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T060/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T031/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T031/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T031/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T018/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T018/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T018/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T045/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T045/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T045/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T067/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T037/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T037/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T037/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T002/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T002/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T002/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T016/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T016/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T016/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T052/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T025/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T025/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T025/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T044/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T044/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T044/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T032/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T048/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T048/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T048/ALL.nii.gz"
+    }
+  ],
+  "validation": [
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T072/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T047/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T047/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T047/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T043/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T043/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T043/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T028/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T028/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T028/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T053/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T053/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T053/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T057/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T057/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T057/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T054/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/ALL.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T049/arterial_phase.nii.gz",
+      "label": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T049/DIS_Ascending_Arch.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T049/ALL.nii.gz"
+    }
+  ]
+}

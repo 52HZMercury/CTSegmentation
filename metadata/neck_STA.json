@@ -1,0 +1,42 @@
+{
+    "training": [
+        {
+            "image": "/workdir2/cn24/data/neck_label_STA/neck/CT202244-20250802-1.3.12.2.1107.5.1.4.105525.30000025080200045197100069902.nii.gz",
+            "label_1": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202244-20250802-1.3.12.2.1107.5.1.4.105525.30000025080200045197100069902_LSTA.nii.gz",
+            "label_2": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202244-20250802-1.3.12.2.1107.5.1.4.105525.30000025080200045197100069902_RSTA.nii.gz",
+            "label_3": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202244-20250802-1.3.12.2.1107.5.1.4.105525.30000025080200045197100069902_STA.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/neck_label_STA/neck/CT202233-20250802-1.3.12.2.1107.5.1.4.105525.30000025080200045197100062522.nii.gz",
+            "label_1": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202233-20250802-1.3.12.2.1107.5.1.4.105525.30000025080200045197100062522_LSTA.nii.gz",
+            "label_2": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202233-20250802-1.3.12.2.1107.5.1.4.105525.30000025080200045197100062522_RSTA.nii.gz",
+            "label_3": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202233-20250802-1.3.12.2.1107.5.1.4.105525.30000025080200045197100062522_STA.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/neck_label_STA/neck/CT202390-20250803-1.3.12.2.1107.5.1.4.105525.30000025080223492039300047795.nii.gz",
+            "label_1": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202390-20250803-1.3.12.2.1107.5.1.4.105525.30000025080223492039300047795_LSTA.nii.gz",
+            "label_2": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202390-20250803-1.3.12.2.1107.5.1.4.105525.30000025080223492039300047795_RSTA.nii.gz",
+            "label_3": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202390-20250803-1.3.12.2.1107.5.1.4.105525.30000025080223492039300047795_STA.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/neck_label_STA/neck/CT202026-20250801-1.3.12.2.1107.5.1.4.105525.30000025080100020688400034485.nii.gz",
+            "label_1": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202026-20250801-1.3.12.2.1107.5.1.4.105525.30000025080100020688400034485_LSTA.nii.gz",
+            "label_2": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202026-20250801-1.3.12.2.1107.5.1.4.105525.30000025080100020688400034485_RSTA.nii.gz",
+            "label_3": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202026-20250801-1.3.12.2.1107.5.1.4.105525.30000025080100020688400034485_STA.nii.gz"
+        }
+    ],
+    "validation": [
+        {
+            "image": "/workdir2/cn24/data/neck_label_STA/neck/CT202350-20250803-1.3.12.2.1107.5.1.4.105525.30000025080223492039300026205.nii.gz",
+            "label_1": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202350-20250803-1.3.12.2.1107.5.1.4.105525.30000025080223492039300026205_LSTA.nii.gz",
+            "label_2": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202350-20250803-1.3.12.2.1107.5.1.4.105525.30000025080223492039300026205_RSTA.nii.gz",
+            "label_3": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT202350-20250803-1.3.12.2.1107.5.1.4.105525.30000025080223492039300026205_STA.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/neck_label_STA/neck/CT201984-20250801-1.3.12.2.1107.5.1.4.105525.30000025080100020688400014721.nii.gz",
+            "label_1": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT201984-20250801-1.3.12.2.1107.5.1.4.105525.30000025080100020688400014721_LSTA.nii.gz",
+            "label_2": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT201984-20250801-1.3.12.2.1107.5.1.4.105525.30000025080100020688400014721_RSTA.nii.gz",
+            "label_3": "/workdir2/cn24/data/neck_label_STA/neck_label_STA/CT201984-20250801-1.3.12.2.1107.5.1.4.105525.30000025080100020688400014721_STA.nii.gz"
+        }
+    ]
+}

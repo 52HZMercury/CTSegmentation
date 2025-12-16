@@ -1,0 +1,78 @@
+{
+    "training": [
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0039716765-20240905-1.3.12.2.1107.5.1.4.73473.30000024090423365141100140663.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0039716765-20240905-1.3.12.2.1107.5.1.4.73473.30000024090423365141100140663_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0039624991-20240815-1.2.156.112605.189250948012984.240815070948.3.9472.111189.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0039624991-20240815-1.2.156.112605.189250948012984.240815070948.3.9472.111189_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0018214351-20241013-1.2.840.113619.2.476.289202366369747991866400869111221882735.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0018214351-20241013-1.2.840.113619.2.476.289202366369747991866400869111221882735_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0039051604-20240420-1.2.840.113619.2.476.156676045610124969777075597105216906896.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0039051604-20240420-1.2.840.113619.2.476.156676045610124969777075597105216906896_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0038513617-20231213-1.2.156.112605.189250953981097.231212200504.3.8576.311487.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0038513617-20231213-1.2.156.112605.189250953981097.231212200504.3.8576.311487_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0038840879-20240304-1.2.156.112605.189250953981097.240303170518.3.8932.597117.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0038840879-20240304-1.2.156.112605.189250953981097.240303170518.3.8932.597117_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0040335204-20250128-1.2.156.112605.189250948012984.250128153754.3.10372.175429.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0040335204-20250128-1.2.156.112605.189250948012984.250128153754.3.10372.175429_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0038798086-20240223-1.2.156.112605.189250953981097.240222193434.3.8680.135715.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0038798086-20240223-1.2.156.112605.189250953981097.240222193434.3.8680.135715_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0039534456-20240728-1.2.156.112605.189250948012984.240728130941.3.9728.638102.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0039534456-20240728-1.2.156.112605.189250948012984.240728130941.3.9728.638102_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0040120839-20241225-1.2.840.113619.2.476.38167555471849706286481436495238817861.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0040120839-20241225-1.2.840.113619.2.476.38167555471849706286481436495238817861_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0004339092-20241006-1.2.156.112605.189250948012984.241006112603.3.1192.254933.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0004339092-20241006-1.2.156.112605.189250948012984.241006112603.3.1192.254933_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0039620929-20240814-1.2.156.112605.189250948012984.240814130646.3.9472.116646.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0039620929-20240814-1.2.156.112605.189250948012984.240814130646.3.9472.116646_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0005564195-20250215-1.2.156.112605.137174099557179.250215113859.3.10040.112770.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0005564195-20250215-1.2.156.112605.137174099557179.250215113859.3.10040.112770_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0039829062-20241004-1.2.840.113619.2.476.164561945449505985982490034479236439823.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0039829062-20241004-1.2.840.113619.2.476.164561945449505985982490034479236439823_label.nii.gz"
+        }
+    ],
+    "validation": [
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0040914549-20250411-1.2.156.112605.189250948012984.250411113647.3.9648.115152.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0040914549-20250411-1.2.156.112605.189250948012984.250411113647.3.9648.115152_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0038937692-20240325-1.2.156.112605.189250948012984.240324201848.3.19892.278267.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0038937692-20240325-1.2.156.112605.189250948012984.240324201848.3.19892.278267_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0000030482-20240625-1.2.156.112605.189250948012984.240624173746.3.10004.99199.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0000030482-20240625-1.2.156.112605.189250948012984.240624173746.3.10004.99199_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0013449334-20240424-1.2.156.112605.189250948012984.240424053330.3.9664.504215.nii.gz",
+            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0013449334-20240424-1.2.156.112605.189250948012984.240424053330.3.9664.504215_label.nii.gz"
+        }
+    ]
+}

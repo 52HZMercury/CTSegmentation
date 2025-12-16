@@ -14,7 +14,8 @@ from monai.transforms import (
     RandRotate90d,
     Rand3DElasticd,
     ResizeWithPadOrCropd,
-    AdjustContrastd
+    AdjustContrastd,
+    Lambdad
 )
 
 config_path = "config/config.yaml"
@@ -126,3 +127,177 @@ val_transforms = Compose(
                              mode=config['transforms']['resize']['mode']),
     ]
 )
+
+# train_transforms = Compose(
+#     [
+#         LoadImaged(keys=["image", "label_1", "label_2", "label_3"], image_only=False),
+#         EnsureChannelFirstd(keys=["image", "label_1", "label_2", "label_3"]),
+#         Orientationd(keys=["image", "label_1", "label_2", "label_3"], axcodes="RAS"),
+#         Spacingd(
+#             keys=["image", "label_1", "label_2", "label_3"],
+#             pixdim=config['transforms']['spacing']['pixdim'],
+#             mode=(config['transforms']['spacing']['mode']),
+#         ),
+#         ScaleIntensityRanged(
+#             keys=["image"],
+#             a_min=config['transforms']['scale_intensity']['a_min'],
+#             a_max=config['transforms']['scale_intensity']['a_max'],
+#             b_min=config['transforms']['scale_intensity']['b_min'],
+#             b_max=config['transforms']['scale_intensity']['b_max'],
+#             clip=config['transforms']['scale_intensity']['clip'],
+#         ),
+#         CropForegroundd(keys=["image", "label_1", "label_2", "label_3"], source_key="label_3",
+#                         margin=config['transforms']['crop_foreground']['margin']),
+#         ResizeWithPadOrCropd(keys=["image", "label_1", "label_2", "label_3"], spatial_size=config['transforms']['resize']['spatial_size'],
+#                              mode=config['transforms']['resize']['mode']),
+#         RandCropByPosNegLabeld(
+#             keys=["image", "label_1", "label_2", "label_3"],
+#             label_key="label_3",
+#             spatial_size=config['transforms']['rand_crop']['spatial_size'],
+#             pos=config['transforms']['rand_crop']['pos'],
+#             neg=config['transforms']['rand_crop']['neg'],
+#             num_samples=config['transforms']['rand_crop']['num_samples'],
+#             image_key="image",
+#             image_threshold=0,
+#         ),
+#         RandFlipd(
+#             keys=["image", "label_1", "label_2", "label_3"],
+#             spatial_axis=[0],
+#             prob=0.5,
+#         ),
+#         RandFlipd(
+#             keys=["image", "label_1", "label_2", "label_3"],
+#             spatial_axis=[1],
+#             prob=0.5,
+#         ),
+#         RandFlipd(
+#             keys=["image", "label_1", "label_2", "label_3"],
+#             spatial_axis=[2],
+#             prob=0.5,
+#         ),
+#         RandRotate90d(
+#             keys=["image", "label_1", "label_2", "label_3"],
+#             prob=0.5,
+#             max_k=4,
+#         ),
+#         RandShiftIntensityd(
+#             keys=["image"],
+#             offsets=config['transforms']['rand_shift_intensity']['offsets'],
+#             prob=config['transforms']['rand_shift_intensity']['prob'],
+#         ),
+#     ]
+# )
+#
+# val_transforms = Compose(
+#     [
+#         LoadImaged(keys=["image", "label_1", "label_2", "label_3"], image_only=False),
+#         EnsureChannelFirstd(keys=["image", "label_1", "label_2", "label_3"]),
+#         Orientationd(keys=["image", "label_1", "label_2", "label_3"], axcodes="RAS"),
+#         Spacingd(
+#             keys=["image", "label_1", "label_2", "label_3"],
+#             pixdim=config['transforms']['spacing']['pixdim'],
+#             mode=(config['transforms']['spacing']['mode']),
+#         ),
+#         ScaleIntensityRanged(
+#             keys=["image"],
+#             a_min=config['transforms']['scale_intensity']['a_min'],
+#             a_max=config['transforms']['scale_intensity']['a_max'],
+#             b_min=config['transforms']['scale_intensity']['b_min'],
+#             b_max=config['transforms']['scale_intensity']['b_max'],
+#             clip=config['transforms']['scale_intensity']['clip'],
+#         ),
+#         CropForegroundd(keys=["image", "label_1", "label_2", "label_3"], source_key="label_3",
+#                         margin=config['transforms']['crop_foreground']['margin']),
+#         ResizeWithPadOrCropd(keys=["image", "label_1", "label_2", "label_3"], spatial_size=config['transforms']['resize']['spatial_size'],
+#                              mode=config['transforms']['resize']['mode']),
+#     ]
+# )
+
+
+# train_transforms = Compose(
+#     [
+#         LoadImaged(keys=["image", "label"], image_only=False),
+#         EnsureChannelFirstd(keys=["image", "label"]),
+#         # Lambdad(keys=["label"], func=lambda x: (x > 0).astype(x.dtype)),
+#         Orientationd(keys=["image", "label"], axcodes="RAS"),
+#         Spacingd(
+#             keys=["image", "label"],
+#             pixdim=config['transforms']['spacing']['pixdim'],
+#             mode=(config['transforms']['spacing']['mode']),
+#         ),
+#         ScaleIntensityRanged(
+#             keys=["image"],
+#             a_min=config['transforms']['scale_intensity']['a_min'],
+#             a_max=config['transforms']['scale_intensity']['a_max'],
+#             b_min=config['transforms']['scale_intensity']['b_min'],
+#             b_max=config['transforms']['scale_intensity']['b_max'],
+#             clip=config['transforms']['scale_intensity']['clip'],
+#         ),
+#         CropForegroundd(keys=["image", "label"], source_key="label",
+#                         margin=config['transforms']['crop_foreground']['margin']),
+#         ResizeWithPadOrCropd(keys=["image", "label"], spatial_size=config['transforms']['resize']['spatial_size'],
+#                              mode=config['transforms']['resize']['mode']),
+#         RandCropByPosNegLabeld(
+#             keys=["image", "label"],
+#             label_key="label",
+#             spatial_size=config['transforms']['rand_crop']['spatial_size'],
+#             pos=config['transforms']['rand_crop']['pos'],
+#             neg=config['transforms']['rand_crop']['neg'],
+#             num_samples=config['transforms']['rand_crop']['num_samples'],
+#             image_key="image",
+#             image_threshold=0,
+#         ),
+#         RandFlipd(
+#             keys=["image", "label"],
+#             spatial_axis=[0],
+#             prob=0.5,
+#         ),
+#         RandFlipd(
+#             keys=["image", "label"],
+#             spatial_axis=[1],
+#             prob=0.5,
+#         ),
+#         RandFlipd(
+#             keys=["image", "label"],
+#             spatial_axis=[2],
+#             prob=0.5,
+#         ),
+#         RandRotate90d(
+#             keys=["image", "label"],
+#             prob=0.5,
+#             max_k=4,
+#         ),
+#         RandShiftIntensityd(
+#             keys=["image"],
+#             offsets=config['transforms']['rand_shift_intensity']['offsets'],
+#             prob=config['transforms']['rand_shift_intensity']['prob'],
+#         ),
+#     ]
+# )
+#
+# val_transforms = Compose(
+#     [
+#         LoadImaged(keys=["image", "label"], image_only=False),
+#         EnsureChannelFirstd(keys=["image", "label"]),
+#         # Lambdad(keys=["label"], func=lambda x: (x > 0).astype(x.dtype)),
+#         Orientationd(keys=["image", "label"], axcodes="RAS"),
+#         Spacingd(
+#             keys=["image", "label"],
+#             pixdim=config['transforms']['spacing']['pixdim'],
+#             mode=(config['transforms']['spacing']['mode']),
+#         ),
+#         ScaleIntensityRanged(
+#             keys=["image"],
+#             a_min=config['transforms']['scale_intensity']['a_min'],
+#             a_max=config['transforms']['scale_intensity']['a_max'],
+#             b_min=config['transforms']['scale_intensity']['b_min'],
+#             b_max=config['transforms']['scale_intensity']['b_max'],
+#             clip=config['transforms']['scale_intensity']['clip'],
+#         ),
+#         CropForegroundd(keys=["image", "label"], source_key="label",
+#                         margin=config['transforms']['crop_foreground']['margin']),
+#         ResizeWithPadOrCropd(keys=["image", "label"], spatial_size=config['transforms']['resize']['spatial_size'],
+#                              mode=config['transforms']['resize']['mode']),
+#     ]
+# )
+

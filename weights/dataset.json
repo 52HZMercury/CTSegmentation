@@ -1,0 +1,12 @@
+{
+    "channel_names": {
+        "0": "CT"
+    },
+    "file_ending": ".nii.gz",
+    "labels": {
+        "aorta": 1,
+        "background": 0
+    },
+    "numTraining": 990,
+    "overwrite_image_reader_writer": "SimpleITKIO"
+}

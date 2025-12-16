@@ -2,42 +2,53 @@
 
 # Data paths
 data:
-  out_dir: "/workdir2/cn24/program/CT_SU/logs"
-  exp_name: "exp_18"
-#  split_json: "metadata/Abdominal_Infrarenal.json"
+  out_dir: "/workdir2/cn24/program/CT_Seg/logs"
+  exp_name: "exp_48"
+  split_json: "metadata/Abdominal_Infrarenal.json"
 #  split_json: "metadata/Abdominal_Suprarenal.json"
 #  split_json: "metadata/Ascending_Arch.json"
 #  split_json: "metadata/Descending_Thoracic.json"
 #  split_json: "metadata/DIS.json"
-  split_json: "metadata/DIS_Abdominal_Infrarenal.json"
+#  split_json: "metadata/DIS_Abdominal_Infrarenal.json"
 #  split_json: "metadata/DIS_Abdominal_Suprarenal.json"
 #  split_json: "metadata/DIS_Ascending_Arch.json"
 #  split_json: "metadata/DIS_Descending_Thoracic.json"
+#  split_json: "metadata/neck_STA.json"
+#  split_json: "metadata/Upper_limb_vessels.json"
 
   datasets_key: "training"
   validation_key: "validation"
 
 # Model parameters
 model:
-  architecture: "BasicUNet"
+#  architecture: "BasicUNet"
 #  architecture: "SegMamba"
 #  architecture: "EchoMamba"
+  architecture: "nnUNet"
+  # 可选：如果路径不是默认的 weights/nnunet_checkpoint_best.pth，可以在这里指定
+  checkpoint_path: "weights/nnunet_checkpoint_best.pth"
+#  checkpoint_path: "weights/best_metric_model_0.6298.pth"
+  # 注意：nnUNet 会忽略 spatial_dims, in_channels 等参数，
+  # 因为这些信息都包含在 dataset.json 和 plans.json 中
   spatial_dims: 3
   in_channels: 2 # 拼接了all_lab输入, 所以输入通道数是2
   out_channels: 2
   dropout: 0.0
 
+loss:
+  loss_type: "DiceLoss"
+
 # Device parameters
 device:
-  cuda_device: "cuda:0"  # 可以设置为 "cuda:0", "cuda:1" 等来选择特定GPU，或 "cpu" 使用CPU
+  cuda_device: "cuda:3"  # 可以设置为 "cuda:0", "cuda:1" 等来选择特定GPU，或 "cpu" 使用CPU
 
 # Training hyperparameters
 training:
   max_epochs: 100
 #  max_iterations: 160
 #  eval_num: 16
-  batch_size: 4
-  num_class: 2
+  batch_size: 2
+  num_class: 3
   learning_rate: 0.0003
   weight_decay: 0.00001
   cache_num: 170
@@ -57,6 +68,7 @@ validation:
 transforms:
   spacing:
     pixdim: [1.62, 1.62, 3.2]
+#    pixdim: [1.0, 1.0, 2.0]
     mode: "bilinear"
   scale_intensity:
     a_min: -79
@@ -65,12 +77,13 @@ transforms:
     b_max: 1.0
     clip: True
   crop_foreground:
-    margin: 20
+    margin: 30
   resize:
-    spatial_size: [160, 96, 64]
+    spatial_size: [192, 128, 96]
     mode: "constant"
   rand_crop:
     spatial_size: [64, 64, 64]
+#    spatial_size: [96, 96, 96]
     pos: 1
     neg: 0
     num_samples: 4

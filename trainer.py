@@ -1,7 +1,7 @@
 import yaml
 import torch
-from monai.losses import DiceCELoss
-from monai.metrics import DiceMetric
+from monai.losses import DiceCELoss, DiceFocalLoss
+from monai.metrics import DiceMetric, CumulativeAverage  # 修改：导入 CumulativeAverage
 from data.Augmentation import train_transforms, val_transforms
 from monai.data import (
     DataLoader,
@@ -55,7 +55,7 @@ class Trainer:
         self.model.to(self.device)
         
         # 初始化损失函数
-        self.loss_function = self._init_loss_function()
+        self.loss_function = self._init_loss_function(self.config['loss'])
         
         # 初始化优化器
         self.optimizer = self._init_optimizer()
@@ -76,11 +76,15 @@ class Trainer:
         self.post_pred = AsDiscrete(argmax=True, to_onehot=self.config['training']['num_class'])
         # 计算两个张量之间的平均Dice系数
         self.dice_metric = DiceMetric(include_background=True, reduction="mean", get_not_nans=False)
+        # self.dice_metric = DiceMetric(include_background=False, reduction="mean", get_not_nans=False)
+
+        # [新增] 初始化 clDice 的累积器
+        self.cldice_metric = CumulativeAverage()
+
         # 全局训练次数
         self.global_step = 0
         self.epoch_loss_values = []
         self.metric_values = []
-
         
         # 为每个卷积层寻找适合的卷积实现算法，加速网络训练
         torch.backends.cudnn.benchmark = True
@@ -163,14 +167,19 @@ class Trainer:
         from models.getmodel import create_model
         return create_model()
 
-    def _init_loss_function(self):
+    def _init_loss_function(self, loss_config):
         """
         初始化损失函数
         
         Returns:
             torch.nn.Module: 损失函数对象
         """
-        return DiceCELoss(to_onehot_y=True, softmax=True)
+        if loss_config['loss_type'] == 'DiceLoss':
+            return DiceCELoss(to_onehot_y=True, softmax=True, lambda_ce=1.0)
+        elif loss_config['loss_type'] == 'DiceFocal':
+            return DiceFocalLoss(to_onehot_y=True, softmax=True)
+
+        return None
 
     def _init_optimizer(self):
         """

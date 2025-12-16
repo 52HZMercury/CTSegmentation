@@ -5,7 +5,7 @@
       <paths name="6419-3090">
         <serverdata>
           <mappings>
-            <mapping deploy="/workdir2/cn24/program/CT_SU" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/workdir2/cn24/program/CT_Seg" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

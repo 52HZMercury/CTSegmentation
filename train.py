@@ -9,8 +9,7 @@ with open(config_path, 'r', encoding='utf-8') as f:
     config = yaml.safe_load(f)
 
 
-# def train(0, train_loader, 0.0, 0)
-def train(Trainer, current_epoch, dice_val_best, global_step_best):
+def train(Trainer, current_epoch, dice_val_test, clDice_val_test, global_step_best):
     Trainer.model.train()
     epoch_loss = 0
     step = 0
@@ -25,6 +24,8 @@ def train(Trainer, current_epoch, dice_val_best, global_step_best):
 
         # 在通道维度上拼接x和all_lab
         x = torch.cat((x, all_lab), dim=1)
+
+        # x, y = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device).to(Trainer.device))
 
         # 将图像放入模型进行训练
         logit_map = Trainer.model(x)
@@ -49,33 +50,38 @@ def train(Trainer, current_epoch, dice_val_best, global_step_best):
         # 每个epoch结束后进行验证
         if step == num_steps:
             epoch_iterator_val = tqdm(Trainer.val_loader, desc=f"Epoch {current_epoch} Validation", dynamic_ncols=True)
-            dice_val = validation(Trainer, epoch_iterator_val)
+
+            # [修改] 接收两个返回值
+            dice_val, cldice_val = validation(Trainer, epoch_iterator_val)
+
             epoch_loss /= step
             Trainer.epoch_loss_values.append(epoch_loss)
             Trainer.metric_values.append(dice_val)
             Trainer.scheduler.step(dice_val)
 
-            # 记录每个epoch的平均损失和dice值到TensorBoard
+            # [修改] 记录 clDice 到 TensorBoard
             Trainer.writer.add_scalar('Train/Epoch_Average_Loss', epoch_loss, current_epoch)
             Trainer.writer.add_scalar('Validation/Dice', dice_val, current_epoch)
+            Trainer.writer.add_scalar('Validation/clDice', cldice_val, current_epoch)  # 新增
 
-            if dice_val > dice_val_best:
-                dice_val_best = dice_val
+            if dice_val > dice_val_test:
+                dice_val_test = dice_val
                 global_step_best = current_epoch
-
+                clDice_val_test = cldice_val
                 # 确保checkpoint目录存在
                 checkpoint_dir = os.path.join(config['data']['out_dir'], f"{config['data']['exp_name']}/checkpoint")
                 if not os.path.exists(checkpoint_dir):
                     os.makedirs(checkpoint_dir)
 
                 torch.save(Trainer.model.state_dict(),
-                           os.path.join(checkpoint_dir, f"best_metric_model_{dice_val}.pth"))
-                print(f'Saved! Current best average dice:{dice_val_best}')
-                # 记录最佳dice值到TensorBoard
-                Trainer.writer.add_scalar('Validation/Best_Dice', dice_val_best, current_epoch)
+                           os.path.join(checkpoint_dir, f"best_metric_model_{dice_val:.4f}.pth"))
+                # [修改] 打印信息增加 clDice
+                print(f'Saved! Best Dice:{dice_val_test:.4f}, clDice: {clDice_val_test:.4f}')
+                Trainer.writer.add_scalar('Validation/Best_Dice', dice_val_test, current_epoch)
 
             else:
-                print(f'Not saved! Current best average dice:{dice_val_best}, current average dice:{dice_val}')
+                # [修改] 打印信息增加 clDice
+                print(
+                    f'Not saved! Best Dice:{dice_val_test:.4f}, Cur Dice:{dice_val:.4f}, Cur clDice: {cldice_val:.4f}')
 
-    # 返回当前epoch，最佳Dice系数，最佳epoch
-    return current_epoch, dice_val_best, global_step_best
+    return current_epoch, dice_val_test, clDice_val_test, global_step_best

@@ -15,7 +15,7 @@ def read_directory(path, result):
 
 
 if __name__ == "__main__":
-    fpath = '/workdir2/cn24/data/Takayasu_rename'
+    fpath = '/workdir2/cn24/data/neck_label_STA'
     # part = 'Abdominal_Infrarenal'
     # part = 'Abdominal_Suprarenal'
     # part = 'Ascending_Arch'
@@ -58,7 +58,6 @@ if __name__ == "__main__":
                         "label": f"{fpath}/Takayasu_lab/{img_dir}/{part}.nii.gz",
                         "all_lab": f"{fpath}/Takayasu_lab/{img_dir}/ALL.nii.gz"
                     })
-
     random.shuffle(output)
 
     # 按8:2比例分割为training和validation

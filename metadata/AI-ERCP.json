@@ -1,0 +1,282 @@
+{
+    "training": [
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Xiong Dexiu-3 BH Cor 2D Fiesta Shim/Xiong Dexiu-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Xiong Dexiu-3 BH Cor 2D Fiesta Shim/Xiong Dexiu-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Maheimuji-6 RTr Ax T2 fs PROPELLER/Maheimuji-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Maheimuji-6 RTr Ax T2 fs PROPELLER/Maheimuji-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Su Youyuan-3 BH Cor 2D Fiesta Shim/Su Youyuan-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Su Youyuan-3 BH Cor 2D Fiesta Shim/Su Youyuan-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zheng Yuanfu-15 RTr Ax T2 fs PROPELLE/Zheng Yuanfu-15 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zheng Yuanfu-15 RTr Ax T2 fs PROPELLE/Zheng Yuanfu-15 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Xie Zhongyu-7 RTr Ax T2 fs PROPELLER_1/Xie Zhongyu-7 RTr Ax T2 fs PROPELLER_1.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Xie Zhongyu-7 RTr Ax T2 fs PROPELLER_1/Xie Zhongyu-7 RTr Ax T2 fs PROPELLER_1-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Mou Fuying-6 RTr Ax T2 fs PROPELLER/Mou Fuying-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Mou Fuying-6 RTr Ax T2 fs PROPELLER/Mou Fuying-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Feng Wenxiu-8 RTr Ax T2 fs PROPELLER/Feng Wenxiu-8 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Feng Wenxiu-8 RTr Ax T2 fs PROPELLER/Feng Wenxiu-8 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Silangqunpei-3 BH Cor 2D Fiesta Shim/Silangqunpei-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Silangqunpei-3 BH Cor 2D Fiesta Shim/Silangqunpei-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Maheimuji-3 BH Cor 2D Fiesta Shim/Maheimuji-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Maheimuji-3 BH Cor 2D Fiesta Shim/Maheimuji-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zeng Wanneng-6 RTr Ax T2 fs PROPELLER/Zeng Wanneng-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zeng Wanneng-6 RTr Ax T2 fs PROPELLER/Zeng Wanneng-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zhang Guisheng-9 RTr Ax T2 fs PROPELLER/Zhang Guisheng-9 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zhang Guisheng-9 RTr Ax T2 fs PROPELLER/Zhang Guisheng-9 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Qian Jianming-3 BH Cor 2D Fiesta Shim/Qian Jianming-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Qian Jianming-3 BH Cor 2D Fiesta Shim/Qian Jianming-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Deng Shidong-6 RTr Ax T2 fs PROPELLER/Deng Shidong-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Deng Shidong-6 RTr Ax T2 fs PROPELLER/Deng Shidong-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Tao Bingjiang-3 BH Cor 2D Fiesta Shim/Tao Bingjiang-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Tao Bingjiang-3 BH Cor 2D Fiesta Shim/Tao Bingjiang-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wu Liru-5 BH Cor 2D Fiesta Shim/Wu Liru-5 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wu Liru-5 BH Cor 2D Fiesta Shim/Wu Liru-5 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zhang Peizhang-3 BH Cor 2D Fiesta Shim_1/Zhang Peizhang-3 BH Cor 2D Fiesta Shim_1.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zhang Peizhang-3 BH Cor 2D Fiesta Shim_1/Zhang Peizhang-3 BH Cor 2D Fiesta Shim_1-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zeng Wanneng-3 BH Cor 2D Fiesta Shim/Zeng Wanneng-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zeng Wanneng-3 BH Cor 2D Fiesta Shim/Zeng Wanneng-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Song Wanyi-3 BH Cor 2D Fiesta Shim/Song Wanyi-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Song Wanyi-3 BH Cor 2D Fiesta Shim/Song Wanyi-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Tao Bingjiang-6 BH Ax T2 fs FSE/Tao Bingjiang-6 BH Ax T2 fs FSE.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Tao Bingjiang-6 BH Ax T2 fs FSE/Tao Bingjiang-6 BH Ax T2 fs FSE-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wang Yurong-4 BH Cor 2D Fiesta Shim/Wang Yurong-4 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wang Yurong-4 BH Cor 2D Fiesta Shim/Wang Yurong-4 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Li Zhe-7 RTr Ax T2 fs PROPELLER/Li Zhe-7 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Li Zhe-7 RTr Ax T2 fs PROPELLER/Li Zhe-7 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Jiangbajiangcuo-3 BH Cor 2D Fiesta Shim/Jiangbajiangcuo-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Jiangbajiangcuo-3 BH Cor 2D Fiesta Shim/Jiangbajiangcuo-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Qian Jianming-6 RTr Ax T2 fs PROPELLER/Qian Jianming-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Qian Jianming-6 RTr Ax T2 fs PROPELLER/Qian Jianming-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Li Boer-3 BH Cor 2D Fiesta Shim/Li Boer-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Li Boer-3 BH Cor 2D Fiesta Shim/Li Boer-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Deng Shidong-3 BH Cor 2D Fiesta Shim/Deng Shidong-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Deng Shidong-3 BH Cor 2D Fiesta Shim/Deng Shidong-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Bai Daifu-4 BH Cor 2D Fiesta Shim/Bai Daifu-4 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Bai Daifu-4 BH Cor 2D Fiesta Shim/Bai Daifu-4 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Chen Junying-4 BH Cor 2D Fiesta Shim/Chen Junying-4 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Chen Junying-4 BH Cor 2D Fiesta Shim/Chen Junying-4 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Li Boer-6 RTr Ax T2 fs PROPELLER/Li Boer-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Li Boer-6 RTr Ax T2 fs PROPELLER/Li Boer-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Liu Guoliang-3 BH Cor 2D Fiesta Shim/Liu Guoliang-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Liu Guoliang-3 BH Cor 2D Fiesta Shim/Liu Guoliang-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Mao Zhongyou-3 BH Cor 2D Fiesta Shim/Mao Zhongyou-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Mao Zhongyou-3 BH Cor 2D Fiesta Shim/Mao Zhongyou-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zhang Peizhang-7 RTr Ax T2 fs PROPELLER/Zhang Peizhang-7 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zhang Peizhang-7 RTr Ax T2 fs PROPELLER/Zhang Peizhang-7 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Jia Xuedong-3 BH Cor 2D Fiesta Shim/Jia Xuedong-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Jia Xuedong-3 BH Cor 2D Fiesta Shim/Jia Xuedong-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zou Anzhen-5 BH Cor 2D Fiesta Shim/Zou Anzhen-5 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zou Anzhen-5 BH Cor 2D Fiesta Shim/Zou Anzhen-5 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wang Piao-6 RTr Ax T2 fs PROPELLER/Wang Piao-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wang Piao-6 RTr Ax T2 fs PROPELLER/Wang Piao-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Jia Xuedong-6 RTr Ax T2 fs PROPELLER/Jia Xuedong-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Jia Xuedong-6 RTr Ax T2 fs PROPELLER/Jia Xuedong-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Li Zhe-4 BH Cor 2D Fiesta Shim/Li Zhe-4 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Li Zhe-4 BH Cor 2D Fiesta Shim/Li Zhe-4 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wu Liru-10 RTr Ax T2 fs PROPELLER/Wu Liru-10 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wu Liru-10 RTr Ax T2 fs PROPELLER/Wu Liru-10 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Dai Qirong-6 RTr Ax T2 fs PROPELLER/Dai Qirong-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Dai Qirong-6 RTr Ax T2 fs PROPELLER/Dai Qirong-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Chen Dunsen-14 BH Ax T2 fs FSE/Chen Dunsen-14 BH Ax T2 fs FSE.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Chen Dunsen-14 BH Ax T2 fs FSE/Chen Dunsen-14 BH Ax T2 fs FSE-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zhang Zerong-4 BH Cor 2D Fiesta Shim/Zhang Zerong-4 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zhang Zerong-4 BH Cor 2D Fiesta Shim/Zhang Zerong-4 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Jiangbajiangcuo-6 RTr Ax T2 fs PROPELLER/Jiangbajiangcuo-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Jiangbajiangcuo-6 RTr Ax T2 fs PROPELLER/Jiangbajiangcuo-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Mao Zhongyou-7 RTr Ax T2 fs PROPELLER/Mao Zhongyou-7 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Mao Zhongyou-7 RTr Ax T2 fs PROPELLER/Mao Zhongyou-7 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/You Zishu-7 RTr Ax T2 fs PROPELLER/You Zishu-7 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/You Zishu-7 RTr Ax T2 fs PROPELLER/You Zishu-7 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Tang Jijang-6 RTr Ax T2 fs PROPELLER/Tang Jijang-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Tang Jijang-6 RTr Ax T2 fs PROPELLER/Tang Jijang-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Dai Qirong-3 BH Cor 2D Fiesta Shim/Dai Qirong-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Dai Qirong-3 BH Cor 2D Fiesta Shim/Dai Qirong-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wang Piao-3 BH Cor 2D Fiesta Shim/Wang Piao-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wang Piao-3 BH Cor 2D Fiesta Shim/Wang Piao-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Guo Lianping-3 BH Cor 2D Fiesta Shim/Guo Lianping-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Guo Lianping-3 BH Cor 2D Fiesta Shim/Guo Lianping-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Bai Daifu-10 BH Ax T2 fs FSE/Bai Daifu-10 BH Ax T2 fs FSE.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Bai Daifu-10 BH Ax T2 fs FSE/Bai Daifu-10 BH Ax T2 fs FSE-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Chang Deguo-3 BH Cor 2D Fiesta Shim_1/Chang Deguo-3 BH Cor 2D Fiesta Shim_1.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Chang Deguo-3 BH Cor 2D Fiesta Shim_1/Chang Deguo-3 BH Cor 2D Fiesta Shim_1-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Chen Dunsen-5 BH Cor 2D Fiesta Shim/Chen Dunsen-5 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Chen Dunsen-5 BH Cor 2D Fiesta Shim/Chen Dunsen-5 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Feng Wenxiu-3 BH Cor 2D Fiesta Shim/Feng Wenxiu-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Feng Wenxiu-3 BH Cor 2D Fiesta Shim/Feng Wenxiu-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Liu Dexi-3 BH Cor 2D Fiesta Shim/Liu Dexi-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Liu Dexi-3 BH Cor 2D Fiesta Shim/Liu Dexi-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Song Wanyi-6 RTr Ax T2 fs PROPELLER/Song Wanyi-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Song Wanyi-6 RTr Ax T2 fs PROPELLER/Song Wanyi-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zou Anzhen-8 RTr Ax T2 fs PROPELLER/Zou Anzhen-8 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zou Anzhen-8 RTr Ax T2 fs PROPELLER/Zou Anzhen-8 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Liu Jie-3 BH Cor 2D Fiesta Shim/Liu Jie-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Liu Jie-3 BH Cor 2D Fiesta Shim/Liu Jie-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        }
+    ],
+    "validation": [
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Silangqunpei-6 RTr Ax T2 fs PROPELLER/Silangqunpei-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Silangqunpei-6 RTr Ax T2 fs PROPELLER/Silangqunpei-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Chang Deguo-6 RTr Ax T2 fs PROPELLER_1/Chang Deguo-6 RTr Ax T2 fs PROPELLER_1.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Chang Deguo-6 RTr Ax T2 fs PROPELLER_1/Chang Deguo-6 RTr Ax T2 fs PROPELLER_1-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Luo Xianjun-5 BH Cor 2D Fiesta Shim/Luo Xianjun-5 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Luo Xianjun-5 BH Cor 2D Fiesta Shim/Luo Xianjun-5 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zhang Guisheng-4 BH Cor 2D Fiesta Shim/Zhang Guisheng-4 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zhang Guisheng-4 BH Cor 2D Fiesta Shim/Zhang Guisheng-4 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Luo Xianjun-8 RTr Ax T2 fs PROPELLER/Luo Xianjun-8 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Luo Xianjun-8 RTr Ax T2 fs PROPELLER/Luo Xianjun-8 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Tang Jijang-3 BH Cor 2D Fiesta Shim/Tang Jijang-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Tang Jijang-3 BH Cor 2D Fiesta Shim/Tang Jijang-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zheng Yuanfu-12 BH Cor 2D Fiesta Shim/Zheng Yuanfu-12 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Zheng Yuanfu-12 BH Cor 2D Fiesta Shim/Zheng Yuanfu-12 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/You Zishu-3 BH Cor 2D Fiesta Shim/You Zishu-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/You Zishu-3 BH Cor 2D Fiesta Shim/You Zishu-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Xiong Dexiu-6 RTr Ax T2 fs PROPELLER/Xiong Dexiu-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Xiong Dexiu-6 RTr Ax T2 fs PROPELLER/Xiong Dexiu-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Mou Fuying-3 BH Cor 2D Fiesta Shim/Mou Fuying-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Mou Fuying-3 BH Cor 2D Fiesta Shim/Mou Fuying-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Liu Guoliang-6 RTr Ax T2 fs PROPELLER/Liu Guoliang-6 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Liu Guoliang-6 RTr Ax T2 fs PROPELLER/Liu Guoliang-6 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Liu Jie-7 RTr Ax T2 fs PROPELLER/Liu Jie-7 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Liu Jie-7 RTr Ax T2 fs PROPELLER/Liu Jie-7 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wang Yurong-7 RTr Ax T2 fs PROPELLER/Wang Yurong-7 RTr Ax T2 fs PROPELLER.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Wang Yurong-7 RTr Ax T2 fs PROPELLER/Wang Yurong-7 RTr Ax T2 fs PROPELLER-label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Xie Zhongyu-3 BH Cor 2D Fiesta Shim/Xie Zhongyu-3 BH Cor 2D Fiesta Shim.nii.gz",
+            "label": "/workdir2/cn24/data/AI-ERCP-labeled_niigz/Xie Zhongyu-3 BH Cor 2D Fiesta Shim/Xie Zhongyu-3 BH Cor 2D Fiesta Shim-label.nii.gz"
+        }
+    ]
+}

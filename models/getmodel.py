@@ -232,7 +232,7 @@ def create_model():
                          depths=[2, 2, 2, 2],
                          feat_size=[16, 32, 64, 128])
 
-    elif architecture == 'EchoMamba':
+    elif architecture == 'EMMamba':
         model = SegMamba(in_chans=config['model']['in_channels'],
                          out_chans=config['model']['out_channels'],
                          depths=[2, 2, 2, 2],

@@ -9,7 +9,7 @@ with open(config_path, 'r', encoding='utf-8') as f:
     config = yaml.safe_load(f)
 
 
-def train(Trainer, current_epoch, dice_val_test, clDice_val_test, global_step_best):
+def train(Trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best):
     Trainer.model.train()
     epoch_loss = 0
     step = 0
@@ -19,13 +19,13 @@ def train(Trainer, current_epoch, dice_val_test, clDice_val_test, global_step_be
     epoch_iterator = tqdm(Trainer.train_loader, desc=f"{config['data']['exp_name']} Epoch {current_epoch} Training", dynamic_ncols=True)
     for step, batch in enumerate(epoch_iterator):
         step += 1
-        # 读取图像和标签并放入GPU
-        x, y, all_lab= (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device), batch["all_lab"].to(Trainer.device))
+        # # 读取图像和标签并放入GPU
+        # x, y, all_lab= (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device), batch["all_lab"].to(Trainer.device))
+        #
+        # # 在通道维度上拼接x和all_lab
+        # x = torch.cat((x, all_lab), dim=1)
 
-        # 在通道维度上拼接x和all_lab
-        x = torch.cat((x, all_lab), dim=1)
-
-        # x, y = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device).to(Trainer.device))
+        x, y = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device).to(Trainer.device))
 
         # 将图像放入模型进行训练
         logit_map = Trainer.model(x)
@@ -51,8 +51,8 @@ def train(Trainer, current_epoch, dice_val_test, clDice_val_test, global_step_be
         if step == num_steps:
             epoch_iterator_val = tqdm(Trainer.val_loader, desc=f"Epoch {current_epoch} Validation", dynamic_ncols=True)
 
-            # [修改] 接收两个返回值
-            dice_val, cldice_val = validation(Trainer, epoch_iterator_val)
+            # [修改] 接收三个返回值
+            dice_val, iou_val, cldice_val = validation(Trainer, epoch_iterator_val)
 
             epoch_loss /= step
             Trainer.epoch_loss_values.append(epoch_loss)
@@ -62,12 +62,14 @@ def train(Trainer, current_epoch, dice_val_test, clDice_val_test, global_step_be
             # [修改] 记录 clDice 到 TensorBoard
             Trainer.writer.add_scalar('Train/Epoch_Average_Loss', epoch_loss, current_epoch)
             Trainer.writer.add_scalar('Validation/Dice', dice_val, current_epoch)
+            Trainer.writer.add_scalar('Validation/IoU', iou_val, current_epoch)  # 新增
             Trainer.writer.add_scalar('Validation/clDice', cldice_val, current_epoch)  # 新增
 
             if dice_val > dice_val_test:
                 dice_val_test = dice_val
-                global_step_best = current_epoch
+                iou_val_test = iou_val  # [新增] 记录最优时的 IoU
                 clDice_val_test = cldice_val
+                global_step_best = current_epoch
                 # 确保checkpoint目录存在
                 checkpoint_dir = os.path.join(config['data']['out_dir'], f"{config['data']['exp_name']}/checkpoint")
                 if not os.path.exists(checkpoint_dir):
@@ -76,12 +78,12 @@ def train(Trainer, current_epoch, dice_val_test, clDice_val_test, global_step_be
                 torch.save(Trainer.model.state_dict(),
                            os.path.join(checkpoint_dir, f"best_metric_model_{dice_val:.4f}.pth"))
                 # [修改] 打印信息增加 clDice
-                print(f'Saved! Best Dice:{dice_val_test:.4f}, clDice: {clDice_val_test:.4f}')
+                print(f'Saved! Best Dice:{dice_val_test:.4f}, IoU: {iou_val_test:.4f}, clDice: {clDice_val_test:.4f}')
                 Trainer.writer.add_scalar('Validation/Best_Dice', dice_val_test, current_epoch)
 
             else:
                 # [修改] 打印信息增加 clDice
                 print(
-                    f'Not saved! Best Dice:{dice_val_test:.4f}, Cur Dice:{dice_val:.4f}, Cur clDice: {cldice_val:.4f}')
+                    f'Not saved! Best Dice:{dice_val_test:.4f}, Cur Dice:{dice_val:.4f}, Cur IoU:{iou_val:.4f}, Cur clDice: {cldice_val:.4f}')
 
-    return current_epoch, dice_val_test, clDice_val_test, global_step_best
+    return current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best

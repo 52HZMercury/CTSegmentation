@@ -3,8 +3,8 @@
 # Data paths
 data:
   out_dir: "/workdir2/cn24/program/CT_Seg/logs"
-  exp_name: "exp_48"
-  split_json: "metadata/Abdominal_Infrarenal.json"
+  exp_name: "exp_53"
+#  split_json: "metadata/Abdominal_Infrarenal.json"
 #  split_json: "metadata/Abdominal_Suprarenal.json"
 #  split_json: "metadata/Ascending_Arch.json"
 #  split_json: "metadata/Descending_Thoracic.json"
@@ -15,23 +15,24 @@ data:
 #  split_json: "metadata/DIS_Descending_Thoracic.json"
 #  split_json: "metadata/neck_STA.json"
 #  split_json: "metadata/Upper_limb_vessels.json"
+  split_json: "metadata/AI-ERCP.json"
 
   datasets_key: "training"
   validation_key: "validation"
 
 # Model parameters
 model:
-#  architecture: "BasicUNet"
+  architecture: "BasicUNet"
 #  architecture: "SegMamba"
 #  architecture: "EchoMamba"
-  architecture: "nnUNet"
+#  architecture: "nnUNet"
   # 可选：如果路径不是默认的 weights/nnunet_checkpoint_best.pth，可以在这里指定
-  checkpoint_path: "weights/nnunet_checkpoint_best.pth"
-#  checkpoint_path: "weights/best_metric_model_0.6298.pth"
+#  checkpoint_path: "weights/nnunet_checkpoint_best.pth"
+#  checkpoint_path: "weights/best_metric_model_0.6449.pth"
   # 注意：nnUNet 会忽略 spatial_dims, in_channels 等参数，
   # 因为这些信息都包含在 dataset.json 和 plans.json 中
   spatial_dims: 3
-  in_channels: 2 # 拼接了all_lab输入, 所以输入通道数是2
+  in_channels: 1 # 拼接了all_lab输入, 所以输入通道数是2
   out_channels: 2
   dropout: 0.0
 
@@ -40,7 +41,7 @@ loss:
 
 # Device parameters
 device:
-  cuda_device: "cuda:3"  # 可以设置为 "cuda:0", "cuda:1" 等来选择特定GPU，或 "cpu" 使用CPU
+  cuda_device: "cuda:2"  # 可以设置为 "cuda:0", "cuda:1" 等来选择特定GPU，或 "cpu" 使用CPU
 
 # Training hyperparameters
 training:

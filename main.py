@@ -29,6 +29,7 @@ def main():
     max_epochs = config['training']['max_epochs']
     current_epoch = 0
     dice_val_test = 0.0
+    iou_val_test = 0.0
     clDice_val_test = 0.0
     global_step_best = 0
 
@@ -37,14 +38,15 @@ def main():
     # 训练循环
     while current_epoch < max_epochs:
         current_epoch += 1
-        current_epoch, dice_val_test, clDice_val_test, global_step_best = train(trainer, current_epoch, dice_val_test, clDice_val_test, global_step_best)
+        current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best = train(trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best)
 
     print("")
-    print(f"=============训练完成===================")
-    print(f"exp_name : {config['data']['exp_name']}")
-    print(f"test_dice: {dice_val_test}")
-    print(f"test_clDice: {clDice_val_test}")
-    print(f"=======================================")
+    print(f"=======================训练完成========================")
+    print(f"== exp_name : {config['data']['exp_name']}")
+    print(f"== test_dice: {dice_val_test}")
+    print(f"== test_iou : {iou_val_test:.4f}")
+    print(f"== test_clDice: {clDice_val_test}")
+    print(f"=======================================================")
 
 
 

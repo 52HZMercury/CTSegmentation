@@ -1,7 +1,7 @@
 import yaml
 import torch
 from monai.losses import DiceCELoss, DiceFocalLoss
-from monai.metrics import DiceMetric, CumulativeAverage  # 修改：导入 CumulativeAverage
+from monai.metrics import DiceMetric, CumulativeAverage, MeanIoU  # 修改：增加 MeanIoU
 from data.Augmentation import train_transforms, val_transforms
 from monai.data import (
     DataLoader,
@@ -26,6 +26,7 @@ from monai.transforms import (
     AdjustContrastd
 )
 from torch.utils.tensorboard import SummaryWriter
+
 import os
 
 class Trainer:
@@ -77,6 +78,9 @@ class Trainer:
         # 计算两个张量之间的平均Dice系数
         self.dice_metric = DiceMetric(include_background=True, reduction="mean", get_not_nans=False)
         # self.dice_metric = DiceMetric(include_background=False, reduction="mean", get_not_nans=False)
+
+        # [新增] 初始化 IoU 评估指标
+        self.iou_metric = MeanIoU(include_background=True, reduction="mean", get_not_nans=False)
 
         # [新增] 初始化 clDice 的累积器
         self.cldice_metric = CumulativeAverage()

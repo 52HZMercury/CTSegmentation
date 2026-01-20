@@ -43,15 +43,16 @@ def compute_cl_dice(pred, target):
 def validation(Trainer, epoch_iterator_val):
     Trainer.model.eval()
     Trainer.dice_metric.reset()
+    Trainer.iou_metric.reset()  # [新增] 重置 IoU
     Trainer.cldice_metric.reset()
 
     with torch.no_grad():
         for batch in epoch_iterator_val:
             val_inputs, val_labels = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device))
 
-            # 将image和all_lab在通道维度上拼接
-            all_lab = batch["all_lab"].to(Trainer.device)
-            val_inputs = torch.cat((val_inputs, all_lab), dim=1)
+            # # 将image和all_lab在通道维度上拼接
+            # all_lab = batch["all_lab"].to(Trainer.device)
+            # val_inputs = torch.cat((val_inputs, all_lab), dim=1)
 
             val_outputs = sliding_window_inference(val_inputs, (64, 64, 64), 4, Trainer.model)
 
@@ -63,6 +64,9 @@ def validation(Trainer, epoch_iterator_val):
 
             # 计算常规 Dice
             Trainer.dice_metric(y_pred=val_outputs_convert, y=val_labels_convert)
+
+            # [新增] 计算 IoU
+            Trainer.iou_metric(y_pred=val_outputs_convert, y=val_labels_convert)
 
             # 计算 clDice
             for pred_tensor, label_tensor in zip(val_outputs_convert, val_labels_convert):
@@ -87,6 +91,7 @@ def validation(Trainer, epoch_iterator_val):
 
         # 获取最终结果
         mean_dice_val = Trainer.dice_metric.aggregate().item()
+        mean_iou_val = Trainer.iou_metric.aggregate().item()  # [新增] 获取平均 IoU
 
         # [修复] 此时 cldice_metric 中包含 Tensor，可以安全调用 .item()
         # 如果验证集为空导致没有添加任何数据，这里可能会报错，添加简单的异常处理更稳健
@@ -97,6 +102,7 @@ def validation(Trainer, epoch_iterator_val):
             mean_cldice_val = Trainer.cldice_metric.aggregate()
 
         Trainer.dice_metric.reset()
+        Trainer.iou_metric.reset()  # [新增]
         Trainer.cldice_metric.reset()
 
-    return mean_dice_val, mean_cldice_val
+    return mean_dice_val, mean_iou_val, mean_cldice_val

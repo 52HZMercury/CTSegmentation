@@ -420,7 +420,7 @@ class MambaEncoder(nn.Module):
         return x
 
 
-class EchoMamba(nn.Module):
+class EMMamba(nn.Module):
     def __init__(
             self,
             in_chans=3,

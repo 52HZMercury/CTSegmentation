@@ -3,7 +3,7 @@
 # Data paths
 data:
   out_dir: "/workdir2/cn24/program/CT_Seg/logs"
-  exp_name: "exp_53"
+  exp_name: "exp_63"
 #  split_json: "metadata/Abdominal_Infrarenal.json"
 #  split_json: "metadata/Abdominal_Suprarenal.json"
 #  split_json: "metadata/Ascending_Arch.json"
@@ -22,10 +22,14 @@ data:
 
 # Model parameters
 model:
-  architecture: "BasicUNet"
+#  architecture: "BasicUNet"
 #  architecture: "SegMamba"
-#  architecture: "EchoMamba"
+#  architecture: "EMMamba"
 #  architecture: "nnUNet"
+#  architecture: "UKAN3D"
+#  architecture: "LKMUNet"
+#  architecture: "LightMUNet"
+  architecture: "SegFormer3D"
   # 可选：如果路径不是默认的 weights/nnunet_checkpoint_best.pth，可以在这里指定
 #  checkpoint_path: "weights/nnunet_checkpoint_best.pth"
 #  checkpoint_path: "weights/best_metric_model_0.6449.pth"
@@ -41,11 +45,12 @@ loss:
 
 # Device parameters
 device:
-  cuda_device: "cuda:2"  # 可以设置为 "cuda:0", "cuda:1" 等来选择特定GPU，或 "cpu" 使用CPU
+  cuda_device: "cuda:0"  # 可以设置为 "cuda:0", "cuda:1" 等来选择特定GPU，或 "cpu" 使用CPU
 
 # Training hyperparameters
 training:
-  max_epochs: 100
+  max_epochs: 200
+  patience: 40
 #  max_iterations: 160
 #  eval_num: 16
   batch_size: 2
@@ -59,7 +64,7 @@ training:
 
 # Validation parameters
 validation:
-  batch_size: 4
+  batch_size: 2
   cache_num: 40
   cache_rate: 1.0
   num_workers: 0

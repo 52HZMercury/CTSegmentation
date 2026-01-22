@@ -4,7 +4,7 @@ import copy
 from torch import nn
 from einops import rearrange
 from functools import partial
-from simlvseg.model.utils.carafe3d import CARAFE3D
+from .utils.carafe3d import CARAFE3D
 
 
 def build_segformer3d_model(config=None):

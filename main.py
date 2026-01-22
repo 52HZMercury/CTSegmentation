@@ -27,18 +27,21 @@ def main():
 
     # 训练参数
     max_epochs = config['training']['max_epochs']
+    early_stop_counter = 0
     current_epoch = 0
     dice_val_test = 0.0
     iou_val_test = 0.0
     clDice_val_test = 0.0
     global_step_best = 0
 
-    print(f"开始训练，总共 {max_epochs} 个epochs")
+    print(f"开始训练----------------------------------------------------")
 
     # 训练循环
-    while current_epoch < max_epochs:
+    for epoch in range(max_epochs):
         current_epoch += 1
-        current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best = train(trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best)
+        current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best, early_stop_counter, stop_now = train(trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best, early_stop_counter)
+        if stop_now:
+            break
 
     print("")
     print(f"=======================训练完成========================")

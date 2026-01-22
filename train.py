@@ -9,49 +9,44 @@ with open(config_path, 'r', encoding='utf-8') as f:
     config = yaml.safe_load(f)
 
 
-def train(Trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best):
+def train(Trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best, early_stop_counter):
+    """
+    Args:
+        early_stop_counter (int): 当前性能未提升的连续轮数
+    Returns:
+        tuple: 包含更新后的各项指标及 early_stop_counter，以及是否触发停止的标志
+    """
     Trainer.model.train()
     epoch_loss = 0
-    step = 0
     num_steps = len(Trainer.train_loader)
+    stop_training = False  # 是否停止训练的标志
 
-    # 返回一个迭代器，并会不断打印迭代进度条，desc为进度条前缀，允许调整窗口大小
-    epoch_iterator = tqdm(Trainer.train_loader, desc=f"{config['data']['exp_name']} Epoch {current_epoch} Training", dynamic_ncols=True)
+    # 设定早停耐心值
+    patience = config['training']['patience']
+
+    epoch_iterator = tqdm(Trainer.train_loader, desc=f"{config['data']['exp_name']} Epoch {current_epoch} Training",
+                          dynamic_ncols=True)
+
     for step, batch in enumerate(epoch_iterator):
         step += 1
-        # # 读取图像和标签并放入GPU
-        # x, y, all_lab= (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device), batch["all_lab"].to(Trainer.device))
-        #
-        # # 在通道维度上拼接x和all_lab
-        # x = torch.cat((x, all_lab), dim=1)
+        x, y = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device))
 
-        x, y = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device).to(Trainer.device))
-
-        # 将图像放入模型进行训练
         logit_map = Trainer.model(x)
-        # 计算训练损失
         loss = Trainer.loss_function(logit_map, y)
-        # 向后传播
-        loss.backward()
-        # .item()返回指定位置的高精度值
-        # 计算损失和
-        epoch_loss += loss.item()
-        # 更新参数
-        Trainer.optimizer.step()
-        # 更新参数之后清除梯度
-        Trainer.optimizer.zero_grad()
-        # 设置进度条前缀，为当前训练次数，训练总数，本次训练损失
-        epoch_iterator.set_description(f"{config['data']['exp_name']} Epoch {current_epoch} Training (loss=%2.5f)" % loss)
 
-        # 记录每个step的训练损失到TensorBoard
+        loss.backward()
+        epoch_loss += loss.item()
+        Trainer.optimizer.step()
+        Trainer.optimizer.zero_grad()
+
+        epoch_iterator.set_description(
+            f"{config['data']['exp_name']} Epoch {current_epoch} Training (loss=%2.5f)" % loss)
         Trainer.writer.add_scalar('Train/Loss', loss.item(), Trainer.global_step)
         Trainer.global_step += 1
 
         # 每个epoch结束后进行验证
         if step == num_steps:
             epoch_iterator_val = tqdm(Trainer.val_loader, desc=f"Epoch {current_epoch} Validation", dynamic_ncols=True)
-
-            # [修改] 接收三个返回值
             dice_val, iou_val, cldice_val = validation(Trainer, epoch_iterator_val)
 
             epoch_loss /= step
@@ -59,31 +54,38 @@ def train(Trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, 
             Trainer.metric_values.append(dice_val)
             Trainer.scheduler.step(dice_val)
 
-            # [修改] 记录 clDice 到 TensorBoard
             Trainer.writer.add_scalar('Train/Epoch_Average_Loss', epoch_loss, current_epoch)
             Trainer.writer.add_scalar('Validation/Dice', dice_val, current_epoch)
-            Trainer.writer.add_scalar('Validation/IoU', iou_val, current_epoch)  # 新增
-            Trainer.writer.add_scalar('Validation/clDice', cldice_val, current_epoch)  # 新增
+            Trainer.writer.add_scalar('Validation/IoU', iou_val, current_epoch)
+            Trainer.writer.add_scalar('Validation/clDice', cldice_val, current_epoch)
 
+            # 核心逻辑：早停判断
             if dice_val > dice_val_test:
+                # 性能提升，重置计数器
                 dice_val_test = dice_val
-                iou_val_test = iou_val  # [新增] 记录最优时的 IoU
+                iou_val_test = iou_val
                 clDice_val_test = cldice_val
                 global_step_best = current_epoch
-                # 确保checkpoint目录存在
+                early_stop_counter = 0
+
+                # 保存模型
                 checkpoint_dir = os.path.join(config['data']['out_dir'], f"{config['data']['exp_name']}/checkpoint")
                 if not os.path.exists(checkpoint_dir):
                     os.makedirs(checkpoint_dir)
 
                 torch.save(Trainer.model.state_dict(),
                            os.path.join(checkpoint_dir, f"best_metric_model_{dice_val:.4f}.pth"))
-                # [修改] 打印信息增加 clDice
                 print(f'Saved! Best Dice:{dice_val_test:.4f}, IoU: {iou_val_test:.4f}, clDice: {clDice_val_test:.4f}')
                 Trainer.writer.add_scalar('Validation/Best_Dice', dice_val_test, current_epoch)
-
             else:
-                # [修改] 打印信息增加 clDice
+                # 性能未提升，计数器累加
+                early_stop_counter += 1
                 print(
-                    f'Not saved! Best Dice:{dice_val_test:.4f}, Cur Dice:{dice_val:.4f}, Cur IoU:{iou_val:.4f}, Cur clDice: {cldice_val:.4f}')
+                    f'Not saved! Best Dice:{dice_val_test:.4f}, Cur Dice:{dice_val:.4f}, EarlyStop: {early_stop_counter}/{patience}')
 
-    return current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best
+            # 检查是否达到阈值
+            if early_stop_counter >= patience:
+                print(f"Early stopping triggered after {current_epoch} epochs.")
+                stop_training = True
+
+    return current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best, early_stop_counter, stop_training

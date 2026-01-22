@@ -43,7 +43,7 @@ def generate_dataset_json(root_dir, output_file, train_ratio=0.8):
 
 if __name__ == "__main__":
     # 确保这里的路径与你报错的路径一致
-    INPUT_DIR = "/workdir2/cn24/data/AI-ERCP-labeled_niigz"
-    OUTPUT_JSON = "../metadata/AI-ERCP.json"
+    INPUT_DIR = "/workdir2/cn24/data/new_AI-ERCP-labeled_nii_gz"
+    OUTPUT_JSON = "../metadata/new_AI-ERCP.json"
 
     generate_dataset_json(INPUT_DIR, OUTPUT_JSON)

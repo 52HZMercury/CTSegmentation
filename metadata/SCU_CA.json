@@ -1,0 +1,618 @@
+{
+    "training": [
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0033977299.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0033977299.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0033348294.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0033348294.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0036294174.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0036294174.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000221018.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000221018.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000559581.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000559581.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000319772.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000319772.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0016752583.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0016752583.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0035177539.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0035177539.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0002201933.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0002201933.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000616496.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000616496.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0036427871.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0036427871.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000109486.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000109486.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0033265332.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0033265332.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0015126386.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0015126386.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001600449.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001600449.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000034090.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000034090.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0033539048.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0033539048.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000232664.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000232664.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000650951.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000650951.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000160946.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000160946.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001186681.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001186681.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000041331.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000041331.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0019130378.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0019130378.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000391640.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000391640.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000704317.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000704317.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000213724.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000213724.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0015857391.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0015857391.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0035528457.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0035528457.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000505711.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000505711.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0005928105.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0005928105.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000525730.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000525730.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000052506.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000052506.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001392113.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001392113.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000387643.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000387643.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000174374.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000174374.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000984697.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000984697.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000091738.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000091738.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0034596340.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0034596340.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000510452.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000510452.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0033789422.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0033789422.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0018830277.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0018830277.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001289675.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001289675.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0004999782.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0004999782.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0005899563.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0005899563.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001132467.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001132467.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0003479056.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0003479056.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001512005.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001512005.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000097156.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000097156.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0006411794.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0006411794.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000558999.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000558999.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000389282.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000389282.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000149547.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000149547.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000665946.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000665946.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000675500.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000675500.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000470736.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000470736.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001846924.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001846924.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0002272498.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0002272498.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0033598874.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0033598874.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000200047.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000200047.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001108105.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001108105.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0015370281.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0015370281.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000534582.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000534582.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000103409.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000103409.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000367360.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000367360.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0034234061.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0034234061.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000054399.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000054399.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001207960.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001207960.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0034896550.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0034896550.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000228132.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000228132.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0036911336.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0036911336.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000788494.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000788494.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0020519315.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0020519315.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0034382883.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0034382883.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000938948.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000938948.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000171784.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000171784.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0033714973.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0033714973.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000121914.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000121914.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000069973.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000069973.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000180700.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000180700.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0035716994.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0035716994.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0008006659.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0008006659.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000294108.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000294108.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000119212.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000119212.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0002132161.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0002132161.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000937457.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000937457.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0007415643.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0007415643.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0019851236.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0019851236.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0002619307.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0002619307.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0011113216.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0011113216.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001329949.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001329949.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0002486507.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0002486507.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0002274178.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0002274178.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000160827.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000160827.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001068625.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001068625.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0005126093.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0005126093.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0035128926.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0035128926.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001241872.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001241872.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000146818.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000146818.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000655607.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000655607.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000287315.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000287315.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000849414.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000849414.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000859228.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000859228.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000203230.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000203230.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0036562144.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0036562144.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000071337.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000071337.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0013245334.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0013245334.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000096283.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000096283.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000575667.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000575667.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000469822.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000469822.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001383806.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001383806.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000056917.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000056917.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0002324102.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0002324102.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000177967.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000177967.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000744786.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000744786.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000275563.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000275563.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0032710117.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0032710117.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000280071.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000280071.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000081629.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000081629.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000317735.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000317735.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000080316.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000080316.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000085863.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000085863.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000243651.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000243651.nii.gz"
+        }
+    ],
+    "validation": [
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001740251.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001740251.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0016565421.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0016565421.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000158308.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000158308.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000111704.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000111704.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0036213368.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0036213368.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0001181604.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0001181604.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0035170071.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0035170071.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000227690.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000227690.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000039630.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000039630.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000648968.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000648968.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0007244240.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0007244240.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000426585.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000426585.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0004061356.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0004061356.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000355398.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000355398.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0036580001.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0036580001.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0032767122.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0032767122.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000470069.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000470069.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000405891.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000405891.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000145533.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000145533.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000059020.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000059020.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000060498.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000060498.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0004346575.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0004346575.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000133416.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000133416.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0034404499.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0034404499.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000157752.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000157752.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000192706.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000192706.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000427972.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000427972.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000508443.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000508443.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000636246.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000636246.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000056957.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000056957.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/SCU_CA_CAC/image/0000158519.nii.gz",
+            "label": "/workdir2/cn24/data/SCU_CA_CAC/CA/0000158519.nii.gz"
+        }
+    ]
+}

@@ -1,3 +1,4 @@
+import numpy as np
 import yaml
 from monai.transforms import (
     AsDiscrete,
@@ -215,6 +216,7 @@ with open(config_path, 'r', encoding='utf-8') as f:
 #     ]
 # )
 
+
 # 单标签的
 train_transforms = Compose(
     [
@@ -225,7 +227,7 @@ train_transforms = Compose(
         Spacingd(
             keys=["image", "label"],
             pixdim=config['transforms']['spacing']['pixdim'],
-            mode=(config['transforms']['spacing']['mode']),
+            mode=(config['transforms']['spacing']['mode'], "nearest"),
         ),
         ScaleIntensityRanged(
             keys=["image"],
@@ -235,10 +237,38 @@ train_transforms = Compose(
             b_max=config['transforms']['scale_intensity']['b_max'],
             clip=config['transforms']['scale_intensity']['clip'],
         ),
+
+        # # CA
+        # CropForegroundd(keys=["image", "label"], source_key="label",
+        #                 margin=config['transforms']['crop_foreground']['margin']),
+        # ResizeWithPadOrCropd(keys=["image", "label"], spatial_size=config['transforms']['resize']['spatial_size'],
+        #                      mode=config['transforms']['resize']['mode']),
+        # RandCropByPosNegLabeld(
+        #     keys=["image", "label"],
+        #     label_key="label",
+        #     spatial_size=config['transforms']['rand_crop']['spatial_size'],
+        #     pos=config['transforms']['rand_crop']['pos'],
+        #     neg=config['transforms']['rand_crop']['neg'],
+        #     num_samples=config['transforms']['rand_crop']['num_samples'],
+        #     image_key="image",
+        #     image_threshold=0,
+        # ),
+
+        # CAC
+        # 1. 先做一次裁剪，去掉无用的空背景
         CropForegroundd(keys=["image", "label"], source_key="label",
                         margin=config['transforms']['crop_foreground']['margin']),
-        ResizeWithPadOrCropd(keys=["image", "label"], spatial_size=config['transforms']['resize']['spatial_size'],
-                             mode=config['transforms']['resize']['mode']),
+
+        # 2. 强制二值化，防止 Spacing 带来的数值污染
+        Lambdad(keys=["label"], func=lambda x: (x > 0).astype(np.uint8)),
+
+        # 3. 统一尺寸，模式设为 constant 确保标签填充的是 0
+        ResizeWithPadOrCropd(
+            keys=["image", "label"],spatial_size=config['transforms']['resize']['spatial_size'],
+            mode="constant"
+        ),
+
+        # 4. 采样器
         RandCropByPosNegLabeld(
             keys=["image", "label"],
             label_key="label",
@@ -246,9 +276,11 @@ train_transforms = Compose(
             pos=config['transforms']['rand_crop']['pos'],
             neg=config['transforms']['rand_crop']['neg'],
             num_samples=config['transforms']['rand_crop']['num_samples'],
-            image_key="image",
-            image_threshold=0,
+            # 如果依然报错，可以暂时把 pos 设为 1, neg 为 1 并添加以下一行：
+            allow_smaller=True,
         ),
+
+
         RandFlipd(
             keys=["image", "label"],
             spatial_axis=[0],
@@ -286,7 +318,7 @@ val_transforms = Compose(
         Spacingd(
             keys=["image", "label"],
             pixdim=config['transforms']['spacing']['pixdim'],
-            mode=(config['transforms']['spacing']['mode']),
+            mode=(config['transforms']['spacing']['mode'], "nearest"),
         ),
         ScaleIntensityRanged(
             keys=["image"],

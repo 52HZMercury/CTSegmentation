@@ -4,7 +4,7 @@ from pathlib import Path
 import random
 
 
-def read_neck_files(base_dir):
+def read_files(base_dir):
     """
     读取neck文件夹和neck_label_STA文件夹，匹配图像和标签文件
 
@@ -15,7 +15,7 @@ def read_neck_files(base_dir):
         list: 包含图像和标签路径的字典列表
     """
     neck_dir = os.path.join(base_dir, "image")
-    label_dir = os.path.join(base_dir, "label")
+    label_dir = os.path.join(base_dir, "CA")
 
     if not os.path.exists(neck_dir):
         print(f"错误: image目录不存在: {neck_dir}")
@@ -112,9 +112,9 @@ def save_to_json(data, output_path):
 
 
 if __name__ == "__main__":
-    base_directory = "/workdir2/cn24/data/Upper_limb_vessels"
+    base_directory = "/workdir2/cn24/data/SCU_dataset"
 
-    output_json_path = "../metadata/Upper_limb_vessels.json"
+    output_json_path = "../metadata/SCU_dataset_CA.json"
 
     print(f"开始读取目录: {base_directory}")
     print("-" * 60)

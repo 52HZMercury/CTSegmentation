@@ -1,6 +1,7 @@
 import yaml
 import torch
 import os
+import glob  # 新增：用于查找旧的权重文件
 from tqdm import tqdm
 from validation import validation
 
@@ -28,6 +29,7 @@ def train(Trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, 
                           dynamic_ncols=True)
 
     for step, batch in enumerate(epoch_iterator):
+
         step += 1
         x, y = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device))
 
@@ -72,9 +74,19 @@ def train(Trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, 
                 checkpoint_dir = os.path.join(config['data']['out_dir'], f"{config['data']['exp_name']}/checkpoint")
                 if not os.path.exists(checkpoint_dir):
                     os.makedirs(checkpoint_dir)
+                else:
+                    # 【修改点】查找并删除该目录下以前保存的 best_metric_model 权重
+                    old_checkpoints = glob.glob(os.path.join(checkpoint_dir, "best_metric_model_*.pth"))
+                    for old_ckpt in old_checkpoints:
+                        try:
+                            os.remove(old_ckpt)
+                        except OSError:
+                            pass
 
+                # 保存新的权重文件
                 torch.save(Trainer.model.state_dict(),
                            os.path.join(checkpoint_dir, f"best_metric_model_{dice_val:.4f}.pth"))
+
                 print(f'Saved! Best Dice:{dice_val_test:.4f}, IoU: {iou_val_test:.4f}, clDice: {clDice_val_test:.4f}')
                 Trainer.writer.add_scalar('Validation/Best_Dice', dice_val_test, current_epoch)
             else:

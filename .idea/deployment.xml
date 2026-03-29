@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" autoUpload="Always" serverName="6419-3090" remoteFilesAllowedToDisappearOnAutoupload="false">
+  <component name="PublishConfigData" autoUpload="Always" serverName="6419-3090" remoteFilesAllowedToDisappearOnAutoupload="false" confirmBeforeUploading="false">
+    <option name="confirmBeforeUploading" value="false" />
     <serverData>
       <paths name="6419-3090">
         <serverdata>
@@ -13,6 +14,13 @@
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="jwl-3090">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/workdir1.8t/cn24/program/CT_Seg" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

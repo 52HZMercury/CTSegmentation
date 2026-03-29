@@ -9,7 +9,6 @@ import torch
 import torch.nn as nn
 import pydoc  # <--- 新增导入：用于动态加载类
 from monai.networks.nets import BasicUnet
-from models.segmamba import SegMamba
 
 # --- 1. 设置临时的 nnU-Net 环境变量以消除警告 ---
 tmp_path = os.path.join(os.path.dirname(__file__), "tmp")
@@ -29,21 +28,21 @@ if not hasattr(np, '_core'):
 # ---------------------------
 
 # --- nnU-Net 依赖库 ---
-# import nnunetv2
-# from batchgenerators.utilities.file_and_folder_operations import join, load_json
-# from nnunetv2.utilities.plans_handling.plans_handler import PlansManager
-# from nnunetv2.utilities.find_class_by_name import recursive_find_python_class
-# from nnunetv2.utilities.label_handling.label_handling import determine_num_input_channels
+import nnunetv2
+from batchgenerators.utilities.file_and_folder_operations import join, load_json
+from nnunetv2.utilities.plans_handling.plans_handler import PlansManager
+from nnunetv2.utilities.find_class_by_name import recursive_find_python_class
+from nnunetv2.utilities.label_handling.label_handling import determine_num_input_channels
 # ----------------------------
 
-from .LightMUNet import LightMUNet
+# from .LightMUNet import LightMUNet
 from .segformer3d import SegFormer3D
 from .ukan3d import UNet3DbottleKAN
-from .segmamba import SegMamba
+# from .segmamba import SegMamba
 
 
-from dynamic_network_architectures.building_blocks.residual import BasicBlockD # LKMUNet 依赖的 Block
-from .lkm_unet import LKMUNet
+# from dynamic_network_architectures.building_blocks.residual import BasicBlockD # LKMUNet 依赖的 Block
+# from .lkm_unet import LKMUNet
 # from .logvmamba import get_umamba_enc_dc_k1_3d_from_plans
 
 
@@ -223,20 +222,20 @@ def create_model():
                          depths=[2, 2, 2, 2],
                          feat_size=[16, 32, 64, 128])
 
-    elif architecture.lower() == 'emmamba':
-        model = SegMamba(in_chans=config['model']['in_channels'],
-                         out_chans=config['model']['out_channels'],
-                         depths=[2, 2, 2, 2],
-                         feat_size=[16, 32, 64, 128])
+    # elif architecture.lower() == 'emmamba':
+    #     model = SegMamba(in_chans=config['model']['in_channels'],
+    #                      out_chans=config['model']['out_channels'],
+    #                      depths=[2, 2, 2, 2],
+    #                      feat_size=[16, 32, 64, 128])
 
     elif architecture.lower() == 'nnunet':
         checkpoint_path = config['model']['checkpoint_path']
         print(f"Loading nnU-Net from: {checkpoint_path}")
         model = load_nnunet_model(checkpoint_path)
 
-    elif architecture.lower() == 'lightmunet':
-        model = LightMUNet(in_channels=config['model']['in_channels'],
-                           out_channels=config['model']['out_channels'])
+    # elif architecture.lower() == 'lightmunet':
+    #     model = LightMUNet(in_channels=config['model']['in_channels'],
+    #                        out_channels=config['model']['out_channels'])
 
     elif architecture.lower() == 'ukan3d':
         model = UNet3DbottleKAN()
@@ -245,57 +244,57 @@ def create_model():
         model = SegFormer3D(in_channels=config['model']['in_channels'], num_classes=config['model']['out_channels'])
 
 
-    elif architecture.lower() == 'lkmunet':
-        # --- LKMUNet 3D Configuration ---
-        # LKMUNet 需要详细的架构参数。这里我们硬编码一个标准的 4 阶段 3D 配置。
-
-        # 1. 定义网络层数 (Stages)
-        n_stages = 4
-
-        # 2. 定义核大小 (Kernel Sizes): 每个阶段都是 3x3x3
-        # 格式: [[3,3,3], [3,3,3], [3,3,3], [3,3,3]]
-        kernel_sizes = [[3, 3, 3]] * n_stages
-
-        # 3. 定义步长 (Strides): 用于下采样
-        # 第一层通常 stride=1 (保持分辨率), 之后每层 stride=2 (分辨率减半)
-        # 格式: [[1,1,1], [2,2,2], [2,2,2], [2,2,2]]
-        strides = [[1, 1, 1]] + [[2, 2, 2]] * (n_stages - 1)
-
-        # 4. 定义每个阶段的特征通道数
-        features_per_stage = [32, 64, 128, 256]
-
-        # 5. 定义每个阶段的卷积块数量
-        n_conv_per_stage = [2] * n_stages
-        n_conv_per_stage_decoder = [2] * (n_stages - 1)
-
-        model = LKMUNet(
-            input_channels=config['model']['in_channels'],  # 输入通道 (与你其他模型保持一致)
-            n_stages=n_stages,
-            features_per_stage=features_per_stage,
-            conv_op=nn.Conv3d,  # 关键：指定使用 3D 卷积
-            kernel_sizes=kernel_sizes,
-            strides=strides,
-            n_conv_per_stage=n_conv_per_stage,
-            num_classes=config['model']['out_channels'],  # 输出类别 (与你其他模型保持一致)
-            n_conv_per_stage_decoder=n_conv_per_stage_decoder,
-            conv_bias=True,
-            norm_op=nn.InstanceNorm3d,  # 关键：指定使用 3D Instance Norm
-            norm_op_kwargs={'eps': 1e-5, 'affine': True},
-            dropout_op=None,
-            dropout_op_kwargs=None,
-            nonlin=nn.LeakyReLU,
-            nonlin_kwargs={'inplace': True},
-            deep_supervision=False,  # 根据需要开启或关闭
-            block=BasicBlockD,  # 需要确保 BasicBlockD 已导入
-            bottleneck_channels=None,
-            stem_channels=None
-        )
+    # elif architecture.lower() == 'lkmunet':
+    #     # --- LKMUNet 3D Configuration ---
+    #     # LKMUNet 需要详细的架构参数。这里我们硬编码一个标准的 4 阶段 3D 配置。
+    #
+    #     # 1. 定义网络层数 (Stages)
+    #     n_stages = 4
+    #
+    #     # 2. 定义核大小 (Kernel Sizes): 每个阶段都是 3x3x3
+    #     # 格式: [[3,3,3], [3,3,3], [3,3,3], [3,3,3]]
+    #     kernel_sizes = [[3, 3, 3]] * n_stages
+    #
+    #     # 3. 定义步长 (Strides): 用于下采样
+    #     # 第一层通常 stride=1 (保持分辨率), 之后每层 stride=2 (分辨率减半)
+    #     # 格式: [[1,1,1], [2,2,2], [2,2,2], [2,2,2]]
+    #     strides = [[1, 1, 1]] + [[2, 2, 2]] * (n_stages - 1)
+    #
+    #     # 4. 定义每个阶段的特征通道数
+    #     features_per_stage = [32, 64, 128, 256]
+    #
+    #     # 5. 定义每个阶段的卷积块数量
+    #     n_conv_per_stage = [2] * n_stages
+    #     n_conv_per_stage_decoder = [2] * (n_stages - 1)
+    #
+    #     model = LKMUNet(
+    #         input_channels=config['model']['in_channels'],  # 输入通道 (与你其他模型保持一致)
+    #         n_stages=n_stages,
+    #         features_per_stage=features_per_stage,
+    #         conv_op=nn.Conv3d,  # 关键：指定使用 3D 卷积
+    #         kernel_sizes=kernel_sizes,
+    #         strides=strides,
+    #         n_conv_per_stage=n_conv_per_stage,
+    #         num_classes=config['model']['out_channels'],  # 输出类别 (与你其他模型保持一致)
+    #         n_conv_per_stage_decoder=n_conv_per_stage_decoder,
+    #         conv_bias=True,
+    #         norm_op=nn.InstanceNorm3d,  # 关键：指定使用 3D Instance Norm
+    #         norm_op_kwargs={'eps': 1e-5, 'affine': True},
+    #         dropout_op=None,
+    #         dropout_op_kwargs=None,
+    #         nonlin=nn.LeakyReLU,
+    #         nonlin_kwargs={'inplace': True},
+    #         deep_supervision=False,  # 根据需要开启或关闭
+    #         block=BasicBlockD,  # 需要确保 BasicBlockD 已导入
+    #         bottleneck_channels=None,
+    #         stem_channels=None
+    #     )
 
     # elif architecture.lower() == 'logvmamba':
     #     # 定义模型参数
     #     # 这些参数通常来自配置文件或命令行参数
-    #     num_input_channels = 3  # 例如：单模态 MRI/CT
-    #     num_output_channels = 1  # 例如：背景 + 前景
+    #     # num_input_channels = 3  # 例如：单模态 MRI/CT
+    #     # num_output_channels = 1  # 例如：背景 + 前景
     #     depth_mode = "even"  # Mamba 内部处理深度的模式 (需根据 VSSBlock 具体实现调整)
     #     conv_mode = "full"  # 明确指定卷积模式
     #     expand = 2  # Mamba 扩展因子
@@ -305,8 +304,8 @@ def create_model():
     #     # 使用代码中提供的工厂函数
     #     print("Initializing model...")
     #     model = get_umamba_enc_dc_k1_3d_from_plans(
-    #         num_input_channels=num_input_channels,
-    #         num_output_channels=num_output_channels,
+    #         num_input_channels=config['model']['in_channels'],
+    #         num_output_channels=config['model']['out_channels'],
     #         depth_mode=depth_mode,
     #         conv_mode=conv_mode,
     #         expand=expand,

@@ -409,7 +409,7 @@ class hilbert3dMamba(nn.Module):
         hilbertMaps = Hilbert3DMapper().hilbert3dMaps
 
         self.spatial_dims = spatial_dims
-        self.vit = MambaEncoder(in_chans,
+        self.vim = MambaEncoder(in_chans,
                                 depths=depths,
                                 dims=feat_size,
                                 drop_path_rate=drop_path_rate,
@@ -520,7 +520,7 @@ class hilbert3dMamba(nn.Module):
         return x
 
     def forward(self, x_in):
-        outs = self.vit(x_in)
+        outs = self.vim(x_in)
         enc1 = self.encoder1(x_in)
 
         x2 = outs[0]

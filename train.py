@@ -5,12 +5,9 @@ import glob  # 新增：用于查找旧的权重文件
 from tqdm import tqdm
 from validation import validation
 
-config_path = "config/config.yaml"
-with open(config_path, 'r', encoding='utf-8') as f:
-    config = yaml.safe_load(f)
 
 
-def train(Trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best, early_stop_counter):
+def train(Trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, global_step_best, early_stop_counter, config):
     """
     Args:
         early_stop_counter (int): 当前性能未提升的连续轮数
@@ -32,6 +29,8 @@ def train(Trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, 
 
         step += 1
         x, y = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device))
+        # x, all_lab, y = (batch["image"].to(Trainer.device), batch["all_lab"].to(Trainer.device), batch["label"].to(Trainer.device))
+        # x = torch.cat((x, all_lab), dim=1)
 
         logit_map = Trainer.model(x)
         loss = Trainer.loss_function(logit_map, y)

@@ -27,23 +27,25 @@ if not hasattr(np, '_core'):
     sys.modules['numpy._core._multiarray_umath'] = np.core._multiarray_umath
 # ---------------------------
 
-# --- nnU-Net 依赖库 ---
-import nnunetv2
-from batchgenerators.utilities.file_and_folder_operations import join, load_json
-from nnunetv2.utilities.plans_handling.plans_handler import PlansManager
-from nnunetv2.utilities.find_class_by_name import recursive_find_python_class
-from nnunetv2.utilities.label_handling.label_handling import determine_num_input_channels
+# # --- nnU-Net 依赖库 ---
+# import nnunetv2
+# from batchgenerators.utilities.file_and_folder_operations import join, load_json
+# from nnunetv2.utilities.plans_handling.plans_handler import PlansManager
+# from nnunetv2.utilities.find_class_by_name import recursive_find_python_class
+# from nnunetv2.utilities.label_handling.label_handling import determine_num_input_channels
 # ----------------------------
 
 # from .LightMUNet import LightMUNet
 from .segformer3d import SegFormer3D
 from .ukan3d import UNet3DbottleKAN
-# from .segmamba import SegMamba
-
+from .segmamba import SegMamba
+from .hilbert3d_mamba import hilbert3dMamba
 
 # from dynamic_network_architectures.building_blocks.residual import BasicBlockD # LKMUNet 依赖的 Block
 # from .lkm_unet import LKMUNet
 # from .logvmamba import get_umamba_enc_dc_k1_3d_from_plans
+
+
 
 
 
@@ -222,16 +224,22 @@ def create_model():
                          depths=[2, 2, 2, 2],
                          feat_size=[16, 32, 64, 128])
 
-    # elif architecture.lower() == 'emmamba':
-    #     model = SegMamba(in_chans=config['model']['in_channels'],
-    #                      out_chans=config['model']['out_channels'],
-    #                      depths=[2, 2, 2, 2],
-    #                      feat_size=[16, 32, 64, 128])
+    elif architecture.lower() == 'emmamba':
+        model = SegMamba(in_chans=config['model']['in_channels'],
+                         out_chans=config['model']['out_channels'],
+                         depths=[2, 2, 2, 2],
+                         feat_size=[16, 32, 64, 128])
 
-    elif architecture.lower() == 'nnunet':
-        checkpoint_path = config['model']['checkpoint_path']
-        print(f"Loading nnU-Net from: {checkpoint_path}")
-        model = load_nnunet_model(checkpoint_path)
+    elif architecture.lower() == 'hilbert3d_mamba':
+        model = hilbert3dMamba(in_chans=config['model']['in_channels'],
+                         out_chans=config['model']['out_channels'],
+                         depths=[2, 2, 2, 2],
+                         feat_size=[16, 32, 64, 128])
+
+    # elif architecture.lower() == 'nnunet':
+    #     checkpoint_path = config['model']['checkpoint_path']
+    #     print(f"Loading nnU-Net from: {checkpoint_path}")
+    #     model = load_nnunet_model(checkpoint_path)
 
     # elif architecture.lower() == 'lightmunet':
     #     model = LightMUNet(in_channels=config['model']['in_channels'],

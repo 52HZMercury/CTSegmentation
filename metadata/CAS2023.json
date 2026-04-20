@@ -1,0 +1,406 @@
+{
+    "training": [
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/042.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/042.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/041.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/041.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/091.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/091.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/009.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/009.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/065.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/065.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/050.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/050.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/001.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/001.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/070.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/070.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/015.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/015.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/078.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/078.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/073.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/073.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/010.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/010.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/055.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/055.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/056.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/056.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/072.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/072.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/045.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/045.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/048.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/048.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/092.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/092.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/076.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/076.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/037.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/037.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/030.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/030.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/021.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/021.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/032.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/032.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/096.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/096.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/080.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/080.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/049.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/049.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/083.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/083.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/026.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/026.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/087.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/087.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/033.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/033.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/008.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/008.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/047.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/047.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/059.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/059.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/063.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/063.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/074.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/074.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/044.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/044.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/098.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/098.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/052.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/052.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/085.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/085.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/012.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/012.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/036.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/036.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/023.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/023.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/039.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/039.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/040.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/040.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/018.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/018.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/066.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/066.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/061.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/061.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/060.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/060.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/007.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/007.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/034.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/034.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/099.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/099.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/046.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/046.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/002.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/002.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/051.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/051.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/016.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/016.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/038.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/038.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/058.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/058.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/068.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/068.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/022.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/022.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/062.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/062.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/024.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/024.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/005.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/005.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/006.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/006.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/067.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/067.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/082.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/082.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/019.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/019.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/079.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/079.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/043.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/043.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/090.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/090.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/020.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/020.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/000.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/000.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/095.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/095.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/057.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/057.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/093.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/093.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/053.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/053.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/089.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/089.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/025.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/025.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/071.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/071.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/084.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/084.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/077.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/077.nii.gz"
+        }
+    ],
+    "validation": [
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/064.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/064.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/029.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/029.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/027.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/027.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/088.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/088.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/097.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/097.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/004.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/004.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/054.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/054.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/075.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/075.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/011.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/011.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/069.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/069.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/086.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/086.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/013.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/013.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/017.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/017.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/028.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/028.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/031.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/031.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/035.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/035.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/094.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/094.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/003.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/003.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/014.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/014.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/CAS2023/data/081.nii.gz",
+            "label": "/workdir2/cn24/data/CAS2023/mask/081.nii.gz"
+        }
+    ]
+}

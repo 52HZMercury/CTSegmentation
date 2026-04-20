@@ -23,7 +23,8 @@ config_path = "config/config.yaml"
 with open(config_path, 'r', encoding='utf-8') as f:
     config = yaml.safe_load(f)
 
-# 分段分割的
+
+# # 分段分割的
 # # compose将transforms组合在一起
 # # 图像尺寸为[1, 259, 223, 74]
 # train_transforms = Compose(

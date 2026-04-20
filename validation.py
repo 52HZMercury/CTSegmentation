@@ -50,7 +50,7 @@ def validation(Trainer, epoch_iterator_val):
         for batch in epoch_iterator_val:
             val_inputs, val_labels = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device))
 
-            # # 将image和all_lab在通道维度上拼接
+            # 将image和all_lab在通道维度上拼接
             # all_lab = batch["all_lab"].to(Trainer.device)
             # val_inputs = torch.cat((val_inputs, all_lab), dim=1)
 

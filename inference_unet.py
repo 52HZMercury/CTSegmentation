@@ -26,13 +26,14 @@ def main():
 
     # 1. 配置路径
     config_path = "config/config.yaml"
-    weight_path = "/workdir2/cn24/program/CT_Seg/logs/exp_116/checkpoint/best_metric_model_0.5974.pth"
-    input_folder = "/workdir2/cn24/data/30daysSuccess/image"
-    output_folder = "/workdir2/cn24/data/30daysSuccess/CAC_pred"
+    # weight_path = "/workdir2/cn24/program/CT_Seg/logs/exp_113/checkpoint/best_metric_model_0.8918.pth"
+    weight_path = "/workdir2/cn24/program/CT_Seg/logs/exp_109/checkpoint/best_metric_model_0.5969.pth"
+    input_folder = "/workdir2/cn24/data/SCU/image"
+    output_folder = "/workdir2/cn24/data/SCU/CAC"
 
     if USE_LABEL:
-        label_folder = "/workdir2/cn24/data/30daysSuccess/CAC"
-        excel_save_path = os.path.join("/workdir2/cn24/data/30daysSuccess", "CA_inference_dice_results.xlsx")
+        label_folder = "/workdir2/cn24/data/SCU/CAC"
+        excel_save_path = os.path.join("/workdir2/cn24/data/SCU", "CAC_inference_dice_results.xlsx")
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
@@ -117,7 +118,7 @@ def main():
                 batch_data["label"] = batch_data["label"].cpu()
 
             # 可选：清空一下 GPU 缓存碎片
-            torch.cuda.empty_cache()
+            # torch.cuda.empty_cache()
 
             # 后处理还原空间 (MONAI 内部根据 post_transforms_list 自动处理对应的 key)
             batch_data = [post_transforms(i) for i in decollate_batch(batch_data)]

@@ -34,16 +34,11 @@ class Trainer:
     训练器类，用于初始化和管理训练过程中的各种参数和组件
     """
 
-    def __init__(self, config_path="config/config.yaml"):
+    def __init__(self, config):
         """
         初始化训练器
-
-        Args:
-            config_path (str): 配置文件路径
         """
-        # 加载配置
-        with open(config_path, 'r', encoding='utf-8') as f:
-            self.config = yaml.safe_load(f)
+        self.config = config
             
         # 初始化设备
         self.device = self._init_device()

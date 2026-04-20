@@ -55,61 +55,6 @@ class LayerNorm(nn.Module):
             return x
 
 
-# class Point:
-#     def __init__(self, x=0, y=0):
-#         self.x = x  # X坐标
-#         self.y = y  # Y坐标
-#
-#
-# class Hilbert:
-#     def __init__(self):
-#         self.hilbert_maps = {}
-#         for n in [64, 32, 16, 8, 4]:
-#             self.hilbert_maps[n] = self.precompute_hilbert_map(n)
-#
-#     def precompute_hilbert_map(self, n):
-#         hilbert_map = []
-#         for d in range(n * n):
-#             pt = Point()
-#             self.d2xy(n, d, pt)
-#             hilbert_map.append([pt.x, pt.y])
-#         return torch.tensor(hilbert_map, dtype=torch.long)  # 存储为张量
-#
-#     def rot(self, n, pt, rx, ry):
-#         if ry == 0:
-#             if rx == 1:
-#                 pt.x = n - 1 - pt.x
-#                 pt.y = n - 1 - pt.y
-#
-#             # Swap x and y
-#             pt.x, pt.y = pt.y, pt.x
-#
-#     # Hilbert代码到XY坐标
-#     def d2xy(self, n, d, pt):
-#         pt.x, pt.y = 0, 0
-#         t = d
-#         s = 1
-#         while s < n:
-#             rx = 1 & (t // 2)
-#             ry = 1 & (t ^ rx)
-#             self.rot(s, pt, rx, ry)
-#             pt.x += s * rx
-#             pt.y += s * ry
-#             t //= 4
-#             s *= 2
-#
-#     # XY坐标到Hilbert代码转换
-#     def xy2d(self, n, pt):
-#         d = 0
-#         s = n // 2
-#         while s > 0:
-#             rx = 1 if (pt.x & s) > 0 else 0
-#             ry = 1 if (pt.y & s) > 0 else 0
-#             d += s * s * ((3 * rx) ^ ry)
-#             self.rot(s, pt, rx, ry)
-#             s //= 2
-#         return d
-
 
 class MooreCurve:
     def __init__(self):
@@ -242,40 +187,6 @@ class MambaLayer(nn.Module):
             nslices=num_slices,
         )
 
-    # def hilbertFlat(self, tensor, hilbertMap):
-    #     # 仅适用于正方形图片
-    #     # 获取输入张量的形状
-    #     batch_size, channel, h, w, d = tensor.shape
-    #     n = h * w * d
-    #     # 初始化结果张量
-    #     flat = torch.zeros((batch_size, channel, n), dtype=tensor.dtype, device=tensor.device)
-    #     frameSize = h * w  # 每一帧的大小
-    #     for b in range(batch_size):
-    #         for s in range(channel):
-    #             for i in range(n):
-    #                 # 填满一帧
-    #                 f = i // frameSize
-    #                 # 按照hilBert曲线的顺序填充张量
-    #                 flat[b, s, i] = tensor[b, s, hilbertMap[i%frameSize][0], hilbertMap[i%frameSize][1], f]
-    #
-    #     return flat
-
-    # def hilbertReshape(self, flatTensor, hilbertMap):
-    #     batch_size, channel, hilbertSeq = flatTensor.shape
-    #     cubeSize = int(math.ceil(hilbertSeq ** (1 / 3)))
-    #     # 初始化结果张量
-    #     reshapeTensor = torch.zeros((batch_size, channel, cubeSize, cubeSize, cubeSize), dtype=flatTensor.dtype,
-    #                                 device=flatTensor.device)
-    #     frameSize = cubeSize * cubeSize  # 每一帧的大小
-    #     for b in range(batch_size):
-    #         for s in range(channel):
-    #             for i in range(hilbertSeq):
-    #                 # 填满一帧
-    #                 f = i // frameSize
-    #                 # 按照hilBert曲线的顺序填充张量
-    #                 reshapeTensor[b, s, hilbertMap[i%frameSize][0], hilbertMap[i%frameSize][1], f] = flatTensor[b, s, i]
-    #
-    #     return reshapeTensor
     def DiagonalFlat(self, tensor, diagonalMap):
         B, C, h, w, d = tensor.shape
         device = tensor.device
@@ -372,30 +283,6 @@ class MambaLayer(nn.Module):
         # 恢复为原来的形状
         out = x_mamba.transpose(-1, -2).reshape(B, C, *img_dims)
 
-        # 竖向
-        # x_flat_vertical = x.permute(0, 1, 4, 3, 2).reshape(B, C, n_tokens).transpose(-1, -2)
-        # x_norm = self.norm(x_flat_vertical)
-        # x_mamba = self.mamba(x_norm)
-        # # 恢复为原来的形状
-        # out = x_mamba.transpose(-1, -2).reshape(B, C, *img_dims_dhw).permute(0, 1, 3, 4, 2)
-
-        # 斜向
-        # frameSize = x.shape[-2]
-        # diagonalMap = self.diagonalMaps[frameSize]
-        # x_dgflat = self.DiagonalFlat(x, diagonalMap).transpose(-1, -2)
-        # x_norm = self.norm(x_dgflat)
-        # x_mamba = self.mamba(x_norm)
-        # # 恢复为原来的形状
-        # out = self.DiagonalReshape(x_mamba.transpose(-1, -2), diagonalMap)
-
-        # MRscan
-        # frameSize = x.shape[-2]
-        # mooreMap = self.mooreMaps[frameSize]
-        # x_MRflat = self.mooreFlat(x, mooreMap).transpose(-1, -2)
-        # x_norm = self.norm(x_MRflat)
-        # x_mamba = self.mamba(x_norm)
-        # # 恢复为原来的形状
-        # out = self.mooreReshape(x_mamba.transpose(-1, -2), mooreMap)
 
         out = out + x_skip
 

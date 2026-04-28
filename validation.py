@@ -48,7 +48,7 @@ def validation(Trainer, epoch_iterator_val):
 
     with torch.no_grad():
         for batch in epoch_iterator_val:
-            val_inputs, val_labels = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device))
+            val_inputs, val_labels = (batch["image"].to(Trainer.device), batch["label_2"].to(Trainer.device))
 
             # 将image和all_lab在通道维度上拼接
             # all_lab = batch["all_lab"].to(Trainer.device)

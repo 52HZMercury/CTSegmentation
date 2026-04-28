@@ -28,7 +28,8 @@ def train(Trainer, current_epoch, dice_val_test, iou_val_test, clDice_val_test, 
     for step, batch in enumerate(epoch_iterator):
 
         step += 1
-        x, y = (batch["image"].to(Trainer.device), batch["label"].to(Trainer.device))
+        x, y = (batch["image"].to(Trainer.device), batch["label_2"].to(Trainer.device))
+
         # x, all_lab, y = (batch["image"].to(Trainer.device), batch["all_lab"].to(Trainer.device), batch["label"].to(Trainer.device))
         # x = torch.cat((x, all_lab), dim=1)
 

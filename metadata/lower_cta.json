@@ -1,0 +1,38 @@
+{
+    "training": [
+        {
+            "image": "/workdir2/cn24/data/lower_cta/image/0040105715.nii.gz",
+            "label": "/workdir2/cn24/data/lower_cta/label/0040105715_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/lower_cta/image/0043042314.nii.gz",
+            "label": "/workdir2/cn24/data/lower_cta/label/0043042314_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/lower_cta/image/0043293771.nii.gz",
+            "label": "/workdir2/cn24/data/lower_cta/label/0043293771_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/lower_cta/image/0043458594.nii.gz",
+            "label": "/workdir2/cn24/data/lower_cta/label/0043458594_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/lower_cta/image/0035889757.nii.gz",
+            "label": "/workdir2/cn24/data/lower_cta/label/0035889757_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/lower_cta/image/0043195997.nii.gz",
+            "label": "/workdir2/cn24/data/lower_cta/label/0043195997_label.nii.gz"
+        }
+    ],
+    "validation": [
+        {
+            "image": "/workdir2/cn24/data/lower_cta/image/0004767846.nii.gz",
+            "label": "/workdir2/cn24/data/lower_cta/label/0004767846_label.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/lower_cta/image/0006970689.nii.gz",
+            "label": "/workdir2/cn24/data/lower_cta/label/0006970689_label.nii.gz"
+        }
+    ]
+}

@@ -1,0 +1,274 @@
+{
+    "training": [
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200330222_20200330.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200330222_20200330.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210121082_20210121.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210121082_20210121.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200812305_20200812.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200812305_20200812.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200629089_20200629.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200629089_20200629.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1191128009_20191128.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1191128009_20191128.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210416171_20210416.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210416171_20210416.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1201208074_20201208.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1201208074_20201208.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210601040_20210601.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210601040_20210601.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200409363_20200409.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200409363_20200409.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210224327_20210224.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210224327_20210224.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200115270_20200115.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200115270_20200115.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200906175_20200906.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200906175_20200906.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200821029_20200821.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200821029_20200821.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200519457_20200519.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200519457_20200519.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200415056_20200415.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200415056_20200415.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210108384_20210108.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210108384_20210108.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200607102_20200607.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200607102_20200607.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200929041_20200929.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200929041_20200929.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210104324_20210104.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210104324_20210104.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210519334_20210519.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210519334_20210519.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200510157_20200510.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200510157_20200510.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200522007_20200522.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200522007_20200522.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200223065_20200223.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200223065_20200223.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1201019008_20201019.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1201019008_20201019.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210428009_20210428.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210428009_20210428.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210311438_20210311.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210311438_20210311.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210629532_20210629.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210629532_20210629.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1201103247_20201103.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1201103247_20201103.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200617020_20200617.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200617020_20200617.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210501252_20210501.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210501252_20210501.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1190523032_20190523.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1190523032_20190523.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200915378_20200915.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200915378_20200915.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200520310_20200520.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200520310_20200520.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210312327_20210312.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210312327_20210312.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200208079_20200208.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200208079_20200208.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1190119132_20190119.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1190119132_20190119.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200411155_20200411.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200411155_20200411.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210324171_20210324.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210324171_20210324.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200807050_20200807.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200807050_20200807.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210114202_20210114.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210114202_20210114.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200714302_20200714.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200714302_20200714.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210412244_20210412.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210412244_20210412.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1201026012_20201026.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1201026012_20201026.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200224019_20200224.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200224019_20200224.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210617245_20210617.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210617245_20210617.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210302289_20210302.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210302289_20210302.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200924052_20200924.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200924052_20200924.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200904217_20200904.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200904217_20200904.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210531594_20210531.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210531594_20210531.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200323002_20200323.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200323002_20200323.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210409541_20210409.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210409541_20210409.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1190212001_20190212.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1190212001_20190212.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1190411251_20190411.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1190411251_20190411.nii.gz"
+        }
+    ],
+    "validation": [
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200805319_20200805.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200805319_20200805.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200916018_20200916.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200916018_20200916.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1190905038_20190905.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1190905038_20190905.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200911051_20200911.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200911051_20200911.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210518290_20210518.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210518290_20210518.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1201105248_20201105.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1201105248_20201105.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1191002012_20191002.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1191002012_20191002.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210113420_20210113.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210113420_20210113.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1191202231_20191202.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1191202231_20191202.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1210720011_20210720.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1210720011_20210720.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200826218_20200826.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200826218_20200826.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200915006_20200915.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200915006_20200915.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1190521012_20190521.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1190521012_20190521.nii.gz"
+        },
+        {
+            "image": "/workdir2/cn24/data/cerebrovascular/CTA/1200328152_20200328.nii.gz",
+            "label": "/workdir2/cn24/data/cerebrovascular/label/1200328152_20200328.nii.gz"
+        }
+    ]
+}

@@ -28,11 +28,11 @@ if not hasattr(np, '_core'):
 # ---------------------------
 
 # # --- nnU-Net 依赖库 ---
-# import nnunetv2
-# from batchgenerators.utilities.file_and_folder_operations import join, load_json
-# from nnunetv2.utilities.plans_handling.plans_handler import PlansManager
-# from nnunetv2.utilities.find_class_by_name import recursive_find_python_class
-# from nnunetv2.utilities.label_handling.label_handling import determine_num_input_channels
+import nnunetv2
+from batchgenerators.utilities.file_and_folder_operations import join, load_json
+from nnunetv2.utilities.plans_handling.plans_handler import PlansManager
+from nnunetv2.utilities.find_class_by_name import recursive_find_python_class
+from nnunetv2.utilities.label_handling.label_handling import determine_num_input_channels
 # ----------------------------
 
 # from .LightMUNet import LightMUNet
@@ -92,7 +92,9 @@ def load_nnunet_model(checkpoint_path, plans_path=None, dataset_json_path=None):
     num_input_channels = determine_num_input_channels(
         plans_manager, configuration_manager, dataset_json
     )
-    num_segmentation_heads = plans_manager.get_label_manager(dataset_json).num_segmentation_heads
+    # 分几类
+    # num_segmentation_heads = plans_manager.get_label_manager(dataset_json).num_segmentation_heads
+    num_segmentation_heads = int(config["model"]["out_channels"])
 
     # 获取配置字典
     config_dict = configuration_manager.configuration
@@ -196,9 +198,38 @@ def load_nnunet_model(checkpoint_path, plans_path=None, dataset_json_path=None):
         print("Warning: Could not find standard weight keys. Assuming checkpoint itself is state_dict")
         state_dict = checkpoint
 
+    # 全部的权重
     network.load_state_dict(state_dict)
 
+    # # 前面几层的权重，最后一层不加载  二分类输出头 -> 三分类输出头
+    # new_state_dict = {}
+    # for k, v in state_dict.items():
+    #     new_k = k.replace("module.", "")
+    #     new_state_dict[new_k] = v
+
+    # model_dict = network.state_dict()
+    # load_dict = {}
+    # skipped = []
+
+    # for k, v in new_state_dict.items():
+    #     if k in model_dict and model_dict[k].shape == v.shape:
+    #         load_dict[k] = v
+    #     else:
+    #         ckpt_shape = tuple(v.shape)
+    #         model_shape = tuple(model_dict[k].shape) if k in model_dict else "not found"
+    #         skipped.append((k, ckpt_shape, model_shape))
+
+    # model_dict.update(load_dict)
+    # network.load_state_dict(model_dict, strict=True)
+
+    # print(f"Successfully loaded {len(load_dict)} layers from checkpoint.")
+    # print(f"Skipped {len(skipped)} layers due to shape mismatch or missing keys.")
+
+    # for k, ckpt_shape, model_shape in skipped:
+    #     print(f"Skip: {k}, checkpoint shape: {ckpt_shape}, model shape: {model_shape}")
+
     return network
+
 
 
 def create_model():
@@ -236,10 +267,10 @@ def create_model():
                          depths=[2, 2, 2, 2],
                          feat_size=[16, 32, 64, 128])
 
-    # elif architecture.lower() == 'nnunet':
-    #     checkpoint_path = config['model']['checkpoint_path']
-    #     print(f"Loading nnU-Net from: {checkpoint_path}")
-    #     model = load_nnunet_model(checkpoint_path)
+    elif architecture.lower() == 'nnunet':
+        checkpoint_path = config['model']['checkpoint_path']
+        print(f"Loading nnU-Net from: {checkpoint_path}")
+        model = load_nnunet_model(checkpoint_path)
 
     # elif architecture.lower() == 'lightmunet':
     #     model = LightMUNet(in_channels=config['model']['in_channels'],

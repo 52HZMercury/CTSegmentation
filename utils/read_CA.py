@@ -7,9 +7,9 @@ from pathlib import Path
 def generate_dataset_json(root_path, train_ratio=0.8):
     # 1. 初始化路径
     root = Path(root_path)
-    img_dir = root / "data"
-    label_dir = root / "mask"
-    output_file = "../metadata/CAS2023.json"
+    img_dir = root / "image"
+    label_dir = root / "label"
+    output_file = "../metadata/lower_cta.json"
 
     # 2. 获取所有图像文件 (假设是 .nii.gz)
     images = sorted([f for f in img_dir.glob("*.nii.gz")])
@@ -21,7 +21,7 @@ def generate_dataset_json(root_path, train_ratio=0.8):
     for img_path in images:
         # 构造对应的 label 文件名：原文件名 + "_label"
         # 例如: 001.nii.gz -> 001_label.nii.gz
-        file_id = img_path.name.replace(".nii.gz", "")
+        file_id = img_path.name.replace(".nii.gz", "_label")
         label_name = f"{file_id}.nii.gz"
         label_path = label_dir / label_name
 
@@ -60,5 +60,5 @@ def generate_dataset_json(root_path, train_ratio=0.8):
 
 if __name__ == "__main__":
     # 根据你的描述设置根目录
-    DATA_ROOT = "/workdir2/cn24/data/CAS2023"
+    DATA_ROOT = "/workdir2/cn24/data/lower_cta"
     generate_dataset_json(DATA_ROOT)

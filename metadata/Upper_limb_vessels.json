@@ -69,10 +69,6 @@
         {
             "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0000030482-20240625-1.2.156.112605.189250948012984.240624173746.3.10004.99199.nii.gz",
             "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0000030482-20240625-1.2.156.112605.189250948012984.240624173746.3.10004.99199_label.nii.gz"
-        },
-        {
-            "image": "/workdir2/cn24/data/Upper_limb_vessels/image/0013449334-20240424-1.2.156.112605.189250948012984.240424053330.3.9664.504215.nii.gz",
-            "label": "/workdir2/cn24/data/Upper_limb_vessels/label/0013449334-20240424-1.2.156.112605.189250948012984.240424053330.3.9664.504215_label.nii.gz"
         }
     ]
 }

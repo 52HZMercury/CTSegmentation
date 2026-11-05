@@ -38,8 +38,9 @@ from nnunetv2.utilities.label_handling.label_handling import determine_num_input
 # from .LightMUNet import LightMUNet
 from .segformer3d import SegFormer3D
 from .ukan3d import UNet3DbottleKAN
-from .segmamba import SegMamba
+# from .segmamba import SegMamba
 from .hilbert3d_mamba import hilbert3dMamba
+# from .merlin import Merlin
 
 # from dynamic_network_architectures.building_blocks.residual import BasicBlockD # LKMUNet 依赖的 Block
 # from .lkm_unet import LKMUNet
@@ -198,7 +199,7 @@ def load_nnunet_model(checkpoint_path, plans_path=None, dataset_json_path=None):
         print("Warning: Could not find standard weight keys. Assuming checkpoint itself is state_dict")
         state_dict = checkpoint
 
-    # 全部的权重
+    # # 全部的权重
     network.load_state_dict(state_dict)
 
     # # 前面几层的权重，最后一层不加载  二分类输出头 -> 三分类输出头
@@ -281,6 +282,14 @@ def create_model():
 
     elif architecture.lower() == 'segformer3d':
         model = SegFormer3D(in_channels=config['model']['in_channels'], num_classes=config['model']['out_channels'])
+
+    elif architecture.lower() == 'merlin':
+        model = Merlin(
+            ImageEmbedding=config['model'].get('merlin_image_embedding', False),
+            PhenotypeCls=config['model'].get('merlin_phenotype_cls', False),
+            RadiologyReport=config['model'].get('merlin_radiology_report', False),
+            FiveYearPred=config['model'].get('merlin_five_year_pred', False),
+        )
 
 
     # elif architecture.lower() == 'lkmunet':

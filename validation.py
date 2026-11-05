@@ -42,19 +42,25 @@ def compute_cl_dice(pred, target):
 
 def validation(Trainer, epoch_iterator_val):
     Trainer.model.eval()
+    label_key = config['data'].get('label_key', 'label')
     Trainer.dice_metric.reset()
     Trainer.iou_metric.reset()  # [新增] 重置 IoU
     Trainer.cldice_metric.reset()
 
     with torch.no_grad():
         for batch in epoch_iterator_val:
-            val_inputs, val_labels = (batch["image"].to(Trainer.device), batch["label_2"].to(Trainer.device))
+            val_inputs, val_labels = (
+                batch["image"].to(Trainer.device),
+                batch[label_key].to(Trainer.device),
+            )
 
             # 将image和all_lab在通道维度上拼接
             # all_lab = batch["all_lab"].to(Trainer.device)
             # val_inputs = torch.cat((val_inputs, all_lab), dim=1)
 
-            val_outputs = sliding_window_inference(val_inputs, (64, 64, 64), 4, Trainer.model)
+            roi_size = tuple(config["transforms"]["rand_crop"]["spatial_size"])
+            val_outputs = sliding_window_inference(val_inputs, roi_size, 4, Trainer.model)
+
 
             val_labels_list = decollate_batch(val_labels)
             val_labels_convert = [Trainer.post_label(val_labels_tensor) for val_labels_tensor in val_labels_list]

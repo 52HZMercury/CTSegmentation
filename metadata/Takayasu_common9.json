@@ -1,0 +1,109 @@
+{
+  "training": [],
+  "validation": [
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T032/arterial_phase.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/ALL.nii.gz",
+      "label_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/Abdominal_Infrarenal.nii.gz",
+      "label_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/Abdominal_Suprarenal.nii.gz",
+      "label_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/Ascending_Arch.nii.gz",
+      "label_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/Descending_Thoracic.nii.gz",
+      "label_DIS": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/DIS.nii.gz",
+      "label_DIS_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/DIS_Abdominal_Infrarenal.nii.gz",
+      "label_DIS_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/DIS_Abdominal_Suprarenal.nii.gz",
+      "label_DIS_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/DIS_Ascending_Arch.nii.gz",
+      "label_DIS_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T032/DIS_Descending_Thoracic.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T052/arterial_phase.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/ALL.nii.gz",
+      "label_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/Abdominal_Infrarenal.nii.gz",
+      "label_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/Abdominal_Suprarenal.nii.gz",
+      "label_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/Ascending_Arch.nii.gz",
+      "label_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/Descending_Thoracic.nii.gz",
+      "label_DIS": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/DIS.nii.gz",
+      "label_DIS_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/DIS_Abdominal_Infrarenal.nii.gz",
+      "label_DIS_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/DIS_Abdominal_Suprarenal.nii.gz",
+      "label_DIS_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/DIS_Ascending_Arch.nii.gz",
+      "label_DIS_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T052/DIS_Descending_Thoracic.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T054/arterial_phase.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/ALL.nii.gz",
+      "label_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/Abdominal_Infrarenal.nii.gz",
+      "label_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/Abdominal_Suprarenal.nii.gz",
+      "label_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/Ascending_Arch.nii.gz",
+      "label_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/Descending_Thoracic.nii.gz",
+      "label_DIS": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/DIS.nii.gz",
+      "label_DIS_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/DIS_Abdominal_Infrarenal.nii.gz",
+      "label_DIS_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/DIS_Abdominal_Suprarenal.nii.gz",
+      "label_DIS_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/DIS_Ascending_Arch.nii.gz",
+      "label_DIS_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T054/DIS_Descending_Thoracic.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T061/arterial_phase.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/ALL.nii.gz",
+      "label_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/Abdominal_Infrarenal.nii.gz",
+      "label_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/Abdominal_Suprarenal.nii.gz",
+      "label_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/Ascending_Arch.nii.gz",
+      "label_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/Descending_Thoracic.nii.gz",
+      "label_DIS": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/DIS.nii.gz",
+      "label_DIS_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/DIS_Abdominal_Infrarenal.nii.gz",
+      "label_DIS_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/DIS_Abdominal_Suprarenal.nii.gz",
+      "label_DIS_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/DIS_Ascending_Arch.nii.gz",
+      "label_DIS_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T061/DIS_Descending_Thoracic.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T062/arterial_phase.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/ALL.nii.gz",
+      "label_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/Abdominal_Infrarenal.nii.gz",
+      "label_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/Abdominal_Suprarenal.nii.gz",
+      "label_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/Ascending_Arch.nii.gz",
+      "label_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/Descending_Thoracic.nii.gz",
+      "label_DIS": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/DIS.nii.gz",
+      "label_DIS_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/DIS_Abdominal_Infrarenal.nii.gz",
+      "label_DIS_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/DIS_Abdominal_Suprarenal.nii.gz",
+      "label_DIS_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/DIS_Ascending_Arch.nii.gz",
+      "label_DIS_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T062/DIS_Descending_Thoracic.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T067/arterial_phase.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/ALL.nii.gz",
+      "label_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/Abdominal_Infrarenal.nii.gz",
+      "label_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/Abdominal_Suprarenal.nii.gz",
+      "label_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/Ascending_Arch.nii.gz",
+      "label_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/Descending_Thoracic.nii.gz",
+      "label_DIS": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/DIS.nii.gz",
+      "label_DIS_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/DIS_Abdominal_Infrarenal.nii.gz",
+      "label_DIS_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/DIS_Abdominal_Suprarenal.nii.gz",
+      "label_DIS_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/DIS_Ascending_Arch.nii.gz",
+      "label_DIS_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T067/DIS_Descending_Thoracic.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T070/arterial_phase.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/ALL.nii.gz",
+      "label_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/Abdominal_Infrarenal.nii.gz",
+      "label_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/Abdominal_Suprarenal.nii.gz",
+      "label_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/Ascending_Arch.nii.gz",
+      "label_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/Descending_Thoracic.nii.gz",
+      "label_DIS": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/DIS.nii.gz",
+      "label_DIS_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/DIS_Abdominal_Infrarenal.nii.gz",
+      "label_DIS_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/DIS_Abdominal_Suprarenal.nii.gz",
+      "label_DIS_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/DIS_Ascending_Arch.nii.gz",
+      "label_DIS_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T070/DIS_Descending_Thoracic.nii.gz"
+    },
+    {
+      "image": "/workdir2/cn24/data/Takayasu_rename/Takayasu_img/T072/arterial_phase.nii.gz",
+      "all_lab": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/ALL.nii.gz",
+      "label_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/Abdominal_Infrarenal.nii.gz",
+      "label_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/Abdominal_Suprarenal.nii.gz",
+      "label_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/Ascending_Arch.nii.gz",
+      "label_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/Descending_Thoracic.nii.gz",
+      "label_DIS": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/DIS.nii.gz",
+      "label_DIS_Abdominal_Infrarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/DIS_Abdominal_Infrarenal.nii.gz",
+      "label_DIS_Abdominal_Suprarenal": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/DIS_Abdominal_Suprarenal.nii.gz",
+      "label_DIS_Ascending_Arch": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/DIS_Ascending_Arch.nii.gz",
+      "label_DIS_Descending_Thoracic": "/workdir2/cn24/data/Takayasu_rename/Takayasu_lab/T072/DIS_Descending_Thoracic.nii.gz"
+    }
+  ]
+}

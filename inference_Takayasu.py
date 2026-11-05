@@ -24,10 +24,10 @@ from models.getmodel import load_nnunet_model
 
 DEFAULT_CONFIG_PATH = "config/config.yaml"
 DEFAULT_WEIGHT_PATH = (
-    "/workdir2/cn24/program/CT_Seg/logs/exp_260428-1500/checkpoint/"
-    "best_metric_model_0.8177.pth"
+    "/workdir2/cn24/program/CT_Seg/logs/exp_260428-1729/checkpoint/"
+    "best_metric_model_0.7001.pth"
 )
-DEFAULT_OUTPUT_DIR = "/workdir2/cn24/program/CT_Seg/logs/exp_260428-1500/inference"
+DEFAULT_OUTPUT_DIR = "/workdir2/cn24/program/CT_Seg/logs/exp_260428-1729/inference"
 
 
 def _load_config(config_path):
@@ -101,7 +101,9 @@ def run_inference(config_path, weight_path, output_dir):
                 meta_keys="pred_meta_dict",
                 orig_meta_keys="image_meta_dict",
                 meta_key_postfix="meta_dict",
-                nearest_interp=True,
+                # 对 logits 做线性插值再 argmax，边界能落在亚体素位置；
+                # 用最近邻会把粗网格（如 1.62x1.62x3.2）的预测原样放大成砖块，3D 表面全是台阶。
+                nearest_interp=False,
                 to_tensor=True,
             ),
             AsDiscreted(keys="pred", argmax=True),
@@ -120,6 +122,8 @@ def run_inference(config_path, weight_path, output_dir):
                 sw_batch_size=4,
                 predictor=model,
                 overlap=0.5,
+                # nnU-Net 用高斯权重融合滑窗；MONAI 默认 "constant" 是等权平均，窗口接缝处会出现台阶
+                mode="gaussian",
             )
 
             pred_labels = torch.argmax(logits, dim=1, keepdim=True)

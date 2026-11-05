@@ -20,6 +20,12 @@ python main.py
 ```
 or
 ```angular2html
-nohup python main.py >>output1.log 2>&1 &
+nohup python main.py > output1.log 2>&1 &
 ```
 
+如需配置网络代理：
+
+```angular2html
+export http_proxy="http://127.0.0.1:7890"
+export https_proxy="http://127.0.0.1:7890"
+```
